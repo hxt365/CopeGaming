@@ -1,0 +1,185 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Setup
+1=Bitte warten Sie, während überprüft wird, ob Ihr System die Mindestanforderungen erfüllt...
+2=Die Anforderungen an den Speicherplatz werden überprüft...
+3=WARNUNG!^^Ihr System verfügt nur über %1% MB Arbeitsspeicher.^Dieses Produkt erfordert %2% MB.^^Wollen Sie fortfahren?
+4=WARNUNG!^^Ihr System verfügt nur über %1% MB Arbeitsspeicher.^Dieses Produkt erfordert %2% MB.^^Das Setup wird abgebrochen.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Überprüfung der Hardware...
+6=WARNUNG!^Dieses Produkt erfordert eine %1% CPU oder besser.^^Die Leistung wird dadurch beeinträchtigt!
+7=WARNUNG!^^Dieses Produkt erfordert eine %1% CPU oder besser.^^Das Setup wird abgebrochen.
+8=WARNUNG!^Dieses Produkt erfordert eines der folgenden Betriebssysteme:^^%1%^^Sie verwenden %2%.^^Das Produkt kann mit diesem Betriebssystem möglicherweise nicht ausgeführt werden.^Soll das Setup fortgesetzt werden?
+9=WARNUNG!^Dieses Produkt erfordert eines der folgenden Betriebssysteme:^^%1%^^Sie verwenden %2%.^^Das Produkt kann nicht ausgeführt werden!^Das Setup wird abgebrochen.
+10=Überprüfung des Systemlaufwerks... 
+11=WARNUNG!^^Das ausgewählte Laufwerk verfügt nicht über genug freien Speicherplatz.^Bitte machen Sie %1% (%2% MB) frei, oder wählen Sie ein anderes Laufwerk, bevor Sie fortfahren.
+12=Dieses Produkt erfordert eine Bildauflösung von %1%.
+13=WARNUNG!^^Für dieses Produkt muß die Anzeige auf %2% %3% Farben eingestellt werden.^^^Wollen Sie die Einstellung jetzt ändern?
+14=Dieses Produkt läuft nur unter:
+15=Sie verwenden das System: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Lizenzvereinbarung
+17=Bitte lesen Sie die folgende Lizenzvereinbarung:
+18=Sind Sie mit diesen Bedingungen einverstanden?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installationsoptionen
+20=Bitte wählen Sie eine der folgenden Installationsoptionen aus.
+21=Standardinstallation^Für optimale Leistung empfohlen^Erforderlich: %1% KB (%2% MB)
+22=Platzsparend^Wird am besten bei begrenztem Festplattenspeicherplatz verwendet^Erforderlich: %1% KB (%2% MB)
+23=Benutzerspezifisch^Ermöglicht das Auswählen von Installationskomponenten
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Wählen Sie das Zielverzeichnis aus
+25=Setup installiert dieses Produkt in das folgende Verzeichnis:^^Klicken Sie auf Weiter, wenn das Produkt in dieses Verzeichnis installiert werden soll.^^Um es in ein anderes Verzeichnis zu installieren, klicken Sie auf Durchsuchen und wählen ein anderes Verzeichnis aus.^^Klicken Sie auf Abbrechen, um die Installation zu beenden.
+26=Bitte geben Sie den Pfad ein, oder wählen Sie die Standardvorgabe aus.
+27=Das Installationsprogramm kann nicht in das gewählte Verzeichnis schreiben.^Bitte wählen Sie ein anderes Verzeichnis aus.
+28=Sie haben ein ungültiges Zeichen eingegeben.^Gültige Zeichen sind A bis Z, 1 bis 9, ein Doppelpunkt nach dem Laufwerksbuchstaben und Backslash. Bitte geben Sie einen gültigen Pfadnamen ein.
+29=WARNUNG!^Der eingegebene Pfadname hat ein ungültiges Format. Alle Pfadnamen müssen^das folgende Format haben: <LAUFWERKSBUCHSTABE>:\<PFADNAME> ^Zum Beispiel: %1%.^Bitte versuchen Sie es erneut.
+30=WARNUNG!^Der eingegebene Ordnername ist zu lang. Ordnernamen sind begrenzt auf: %1% Zeichen.^Bitte versuchen Sie es erneut.
+31=WARNUNG!...^^Ungültiges Laufwerk.^Laufwerk %1% scheint ein %2% zu sein.^Dieses Laufwerk kann nicht als Installationszielort verwendet werden.^^Bitte wählen Sie ein Festplattenlaufwerk aus.
+32=Disketten- oder Wechsellaufwerk
+33=CD-ROM
+34=Neues Verzeichnis bestätigen
+35=Programmdateien werden kopiert...
+36=Kopieren der Datei ...%1%
+37=Die Dateiübertragung ist abgeschlossen.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Auswahl des Ordners
+39=Setup fügt zu dem unten aufgeführten Programm-Ordner Programmsymbole hinzu.^Sie können einen neuen Ordnernamen eingeben, oder einen Namen aus der Liste mit^bestehenden Ordnern auswählen. Klicken Sie auf Weiter, um fortzufahren.
+40=Verzeichnis wird erstellt...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Für dieses Produkt muß DirectX installiert werden.^^ Wollen Sie fortfahren?
+42=WARNUNG!!^^DirectX wurde nicht installiert.^Möglicherweise wird dieses Produkt nicht richtig funktionieren.
+43=WARNUNG!!^^Ihr System verfügt nicht über genug Speicherplatz auf Laufwerk: %1%,^um die für dieses Produkt erforderlichen Systemdateien zu installieren. Diese Dateien sind zur korrekten Ausführung dieses Produkts notwendig, und müssen in Ihr %1% Laufwerk installiert werden.^^Bitte stellen Sie %2% Byte Speicherplatz auf diesem Laufwerk zur Verfügung, bevor Sie fortfahren. Installation beenden.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Setup abgeschlossen
+45=Herzlichen Glückwunsch!!^Die Installation wurde erfolgreich abgeschlossen.
+46=Sie müssen Windows neu starten, bevor Sie beginnen können.
+47=Ja, ich möchte meinen Computer jetzt neu starten.
+48=Nein, ich werde meinen Computer später neu starten.
+49=Klicken Sie auf Beenden, um die Installation abzuschließen.
+50=Ja, ich möchte die Hilfedatei lesen.
+52=Ja, ich möchte das Produkt jetzt starten.
+54=Bitte wählen Sie den gewünschten Installationstyp aus.
+56=Mit dieser Option gelangen Sie zur Pfadauswahl zurück.
+57=Mit dieser Option beenden Sie das Installationsprogramm, um^Festplattenspeicherplatz frei zu machen.
+58=Für die meisten Computer empfohlen
+59=Für fortgeschrittene Benutzer, die alle verfügbaren Setup-Optionen individuell festlegen möchten
+60=Optionen für den Installationstyp
+61=Bitte legen Sie die CD #%1% in das CD-ROM-Laufwerk ein
+62=WARNUNG!^ %1% Anwendungsdateien fehlen!^Setup kann die Installation nicht korrekt ausführen.^Bitte wenden Sie sich an den Kundendienst.^^Installation wird abgebrochen...
+64=Der eingegebene Ordnername enthält ungültige Zeichen.^Alle Zeichen müssen alphanumerisch sein, z. B.: A bis Z, 1 bis 9 und/oder Leerzeichen. ^Bitte geben Sie einen anderen Ordnernamen ein.
+66=Problem mit der CD-ROM: Die Quelldatei ist auf der CD nicht vorhanden.^%1% ^%2%	
+67=Fehler beim Kopieren einer Datei.^ Eine Datei konnte nicht auf Ihre Festplatte kopiert werden.^Installation wird abgebrochen.^%1%^%2%^"%3%	
+69=Herzlichen Glückwunsch! Das Setup wurde erfolgreich abgeschlossen.
+70=Hilfedatei erneut aufrufen
+71=Hilfedatei
+72=Für dieses Produkt ist eine Bildschirm-Auflösung von %1% erforderlich.^Bitte ändern Sie die Systemeinstellung.^Installation wird abgebrochen.
+73=Für dieses Produkt ist eine Bildschirm-Auflösung von %1% erforderlich^Möchten Sie die Einstellung jetzt ändern?
+74=WARNUNG^^DirectX konnte nicht installiert werden. Kein Speicherplatz mehr vorhanden.^Bitte stellen Sie auf Ihrem Windows-Laufwerk Speicherplatz zur Verfügung, und wiederholen Sie die Installation^Installation wird abgebrochen.
+75=WARNUNG^^DirectX Installationsfehler. Die Leistung könnte beeinträchtigt sein.
+76=WARNUNG^^Ihr CD-ROM-Laufwerk entspricht anscheinend nicht den Anforderungen dieses Produkts.^Die Leistung könnte beeinträchtigt sein.^Setup wird abgebrochen.
+77=WARNUNG^^Ihre CD-ROM scheint nicht schnell genug zu sein.^Die Leistung könnte beeinträchtigt sein.^Wollen Sie fortfahren?
+78=WARNUNG^^Sie verfügen nicht über genug Festplattenspeicherplatz für eine Installation in Laufwerk %1%.^Bitte machen Sie %2% Byte (%3% MB) frei, oder wählen Sie ein anderes Laufwerk.
+79=Wählen Sie die gewünschte Sprache.
+80=Es muß eine Programmgruppe angegeben werden.
+81=ACHTUNG^^Ungültiger Pfad. Das gewählte Verzeichnis darf sich nicht auf der obersten Ebene der Festplatte oder im Windows-Verzeichnis befinden.
+82=Möchten Sie %1% installieren?
+83=Ist ein Mikrophon an den Computer angeschlossen?
+84=Dieses Programm wurde zur Anzeige mit %1% oder mehr Farben optimiert. Auf Ihrem System sind jedoch nur %2% Farben eingestellt.^^Wenn Sie das Spiel mit der höchstmöglichen Grafikqualität ^anzeigen lassen möchten, müssen Sie die Anzeigeeinstellungen entsprechend ändern.^Möchten Sie die Anzeige jetzt ändern?
+85=Vorhandener Festplattenspeicher wird überprüft...
+86=ACHTUNG! ^^Zur Ausführung dieses Installationsprogramms muß Ihre Anzeige auf 256 Farben oder mehr eingestellt sein. ^Ihr System ist zur Zeit auf 16 Farben eingestellt. Bitte ändern Sie die Farbtiefe, bevor Sie fortfahren.^^Die Installation wird abgebrochen.
+87=ACHTUNG!^^Auf Ihrem System wurden einige Multimedia-Bibliotheksdateien von Windows nicht gefunden.^Diese Dateien werden zur erfolgreichen Installation von DirectX benötigt.^^Installieren Sie von der Windows 95/98-Installations-CD oder -Diskette alle Multimedia-Elemente.^Ein Upgrade wird dringend empfohlen. ^^Installation beenden? 
+88=Mail-Server
+89=Sprachwahl
+90=Wählen Sie die zu installierende Sprache.
+91=In welchem Land wohnen Sie?
+92=WARNUNG! Upgrade kann nicht ausgeführt werden.^Auf Ihrem System fehlen die originalen Produktdateien.^Vor dem Fortfahren bitte das gesamte Produkt installieren.^^Installer beenden.
+93=Internet-Zugang
+94=Möchten Sie von diesem Produkt aus Internet-Zugang ermöglichen?
+95=Ja, Internet-Zugang ermöglichen.
+96=Nein, Internet-Zugang deaktivieren.
+97=Wer ist Ihr Internet Service Provider?
+98=E-Mail-Information
+99=Bitte E-Mail-Adresse (benutzername@server.com) und Mail-Server (POP-Server) angeben.
+100=E-Adresse
+101=WARNUNG! ^Ungültiger Shortcut-Name definiert.^Ein Shortcut-Name enthält ein ungültiges Zeichen.^Shortcut-Icon wird nicht dargestellt.
+102=WARNUNG! Quelldatei auf CD nicht vorhanden.^^      Datei:  %1% ^Quelle:  %2%^^Abbruch der Installation wird empfohlen.^Abbrechen?
+103=WARNUNG! Eine Datei wurde nicht auf Ihre Festplatte kopiert.^^      Datei:   %1%^Quelle:  %2%    Ziel:  %3%^^Abbruch der Installation wird empfohlen.^Abbrechen?
+104=Sie müssen ein Land auswählen um fortzufahren.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

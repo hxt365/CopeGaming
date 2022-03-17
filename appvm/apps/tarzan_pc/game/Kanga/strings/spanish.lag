@@ -1,0 +1,170 @@
+;;  EUROPEAN SPANISH
+[CUSTOM STRINGS]
+0=_Instalación
+1=Espere mientras comprobamos que su sistema reúne los requisitos mínimos...
+2=Comprobando los requisitos de memoria...
+3=¡ADVERTENCIA!^^Su sistema sólo tiene %1% MB de RAM.^Este producto necesita %2% MB.^^¿Desea continuar?
+4=¡ADVERTENCIA!^^Su sistema sólo tiene %1% MB de RAM.^Este producto necesita %2% MB.^^Instalación cancelada.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Comprobando el hardware...
+6=¡ADVERTENCIA!^Este producto necesita una %1% CPU o superior. ^^¡El rendimiento se verá afectado!
+7=¡ADVERTENCIA!^^Este producto necesita una %1% CPU o superior.^^Instalación cancelada.
+8=¡ADVERTENCIA!^Este producto necesita uno de los siguientes sistemas operativos:^^%1%^^Su sistema es un %2%.^^Este producto puede no funcionar con este sistema operativo.^¿Desea continuar con la instalación?
+9=¡ADVERTENCIA!^Este producto necesita uno de los siguientes sistemas operativos: ^^%1%^^Su sistema es un %2%.^^¡Este producto no funcionará!^Instalación cancelada.
+10=Comprobando la unidad de disco del sistema...
+11=¡ADVERTENCIA!^^La unidad que ha seleccionado no tiene espacio libre suficiente.^Libere %1% (%2% MB) o elija otra unidad antes de continuar.
+12=Este producto necesita una resolución de pantalla de %1%.
+13=¡ADVERTENCIA! ^^Este producto necesita una pantalla configurada con color de %2% %3%. ^^^¿Desea cambiar ahora los parámetros?
+14=Este producto sólo funciona con:
+15=Su sistema es un:
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Contrato de licencia
+17=Por favor, lea el siguiente contrato de licencia:
+18=¿Acepta estas condiciones?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Opciones de instalación
+20=Elija una de las opciones de instalación.
+21=Instalación estándar^Recomendada para un rendimiento óptimo^Se necesita: %1% KB ( %2% MB)
+22=Ahorro de espacio^Utilizar si el espacio en disco es limitado^Se necesita: %1% KB (%2% MB)
+23=Personalizada^Permite elegir qué componentes se instalarán
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Elija una ubicación de destino
+25=El programa de instalación instalará este producto en el directorio siguiente:^^Para instalarlo en este directorio, haga clic en Siguiente.^^Para instalarlo en otro directorio, haga clic en Examinar y elija^otro directorio. ^^Haga clic en Cancelar para salir de la instalación.
+26=Escriba la ruta o seleccione la ruta predeterminada.
+27=El programa de instalación no puede escribir en la ubicación seleccionada.^Seleccione otra ubicación.
+28=Ha escrito caracteres no válidos.^Los caracteres válidos son las letras de la A a la Z, los números ^del 1 al 9, los dos puntos después de la letra de la unidad y la ^barra invertida. Escriba un nombre de ruta válido.
+29=¡ADVERTENCIA! ^El formato del nombre de ruta no es válido. Todos los nombres de ruta deben^tener el formato siguiente: <LETRA DE LA UNIDAD DE DISCO>:\<NOMBRE DE LA RUTA> ^Por ejemplo: %1%.^Inténtelo de nuevo.
+30=¡ADVERTENCIA!^El nombre de la carpeta es demasiado largo. Los nombres de carpeta están limitados a  %1% caracteres.^Inténtelo de nuevo.
+31=¡ADVERTENCIA!...^^Selección de unidad no válida.^La unidad de disco %1% parecer ser una %2%.^Esta unidad no puede usarse como destino de la instalación.^^Seleccione una unidad de disco duro fija.
+32=Unidad de disquete o unidad extraíble
+33=CD-ROM
+34=Confirme el nuevo directorio
+35=Copiando los archivos de programa...
+36=Copiando archivo ...%1%
+37=Transferencia de archivos completada.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Selección de carpeta
+39=El programa de instalación añadirá iconos de programa a la carpeta de programa ^siguiente. Puede escribir otro nombre de carpeta o seleccionar una en la lista^de carpetas existentes. Haga clic en Siguiente para continuar.
+40=Creando directorio ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Este producto necesita que se instale DirectX.^^¿Desea continuar?
+42=¡ADVERTENCIA! ^^DirectX no está instalado. ^Este producto puede no funcionar correctamente.
+43=¡ADVERTENCIA!^^Su sistema no tiene espacio en disco suficiente en la unidad %1%^para instalar los archivos de sistema que necesita este producto.^Estos archivos son necesarios para la correcta ejecución del producto y deben^estar en la unidad %1%.^^Libere %2% bytes de espacio en esta unidad antes de continuar.^Saliendo de la instalación.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Instalación completada
+45=¡Enhorabuena!^La instalación se ha realizado correctamente.
+46=Debe reiniciar Windows antes de empezar.
+47=Sí, quiero reiniciar el ordenador ahora.
+48=No, reiniciaré el ordenador más tarde.
+49=Haga clic en Finalizar para completar la instalación.
+50=Sí, quiero ver el archivo Ayuda.
+52=Sí, quiero ejecutar el producto ahora.
+54=Seleccione el tipo de instalación que desee.
+56=Con esta opción volverá a la selección de la ruta.
+57=Con esta opción saldrá del programa de instalación y ^podrá liberar espacio en disco.
+58=Recomendada para la mayoría de los ordenadores
+59=Para usuarios avanzados que deseen personalizar todas las opciones^de instalación disponibles
+60=Opciones de tipos de instalación
+61=Inserte el CD nº %1%
+62=¡ADVERTENCIA! Faltan ^ %1% archivos de aplicación.^El programa de instalación no puede completar correctamente la instalación.^Póngase en contacto con el Servicio de atención al cliente.^^Instalación cancelada...
+64=Ha escrito caracteres no válidos en el nombre de la carpeta.^Todos los caracteres deben ser alfanuméricos, es decir: A a Z, 1 a 9 y^espacios.Escriba otro nombre de carpeta.
+66=Hay un problema con el CD-ROM: no existe archivo fuente en el CD.^%1% ^%2%	
+67=Fallo al copiar archivo.^ No se ha copiado un archivo en la unidad de disco duro.^ Instalación cancelada.^%1%^%2%^"%3%	
+69=¡Enhorabuena! La instalación ha terminado correctamente.
+70=Ver el archivo Ayuda
+71=Archivo Ayuda
+72=Este producto necesita una resolución de pantalla de %1%.^Cambie los parámetros de su sistema.^Instalación cancelada.
+73=Este producto necesita una resolución de pantalla de %1%.^¿Desea cambiar el sistema ahora?
+74=¡ADVERTENCIA!^^DirectX no se ha instalado. No hay espacio en disco.^Libere espacio en la unidad de Windows y repita la instalación^Instalación cancelada.
+75=¡ADVERTENCIA!^^Error en la instalación de DirectX. El rendimiento puede verse afectado.
+76=¡ADVERTENCIA!^^La unidad de CD-ROM parece no cumplir los requisitos de este producto.^El rendimiento puede verse afectado.^Instalación cancelada.
+77=¡ADVERTENCIA!^^El CD-ROM parece no ser suficientemente rápido. ^El rendimiento puede verse afectado.^¿Desea continuar?
+78=¡ADVERTENCIA!^^No hay espacio en disco suficiente para realizar la instalación en la unidad %1%^Libere %2% bytes (%3% MB) o seleccione otra unidad.
+79=Seleccione un idioma para el producto.
+80=Debe especificar un Grupo de programas.
+81=AVISO^^Selección de ruta no válida. La ubicación del disco duro no puede estar en el directorio raíz ni el directorio Windows.
+82=¿Quieres instalar %1% ?
+83=¿Tienes conectado un micrófono al equipo?
+84=Este programa está optimizado para gráficos en color %1% o superior. Su sistema está configurado para %2% colores.^^Para optener la máxima calidad en los gráficos del juego, ^cambia la configuración de pantalla a una resolución gráfica superior.^¿Quieres hacerlo ahora?
+85=Comprobando el espacio en disco...
+86=¡AVISO! ^^Este programa de instalación necesita una configuración de pantalla de 256 colores o más. ^Ahora tu sistema está configurado para utilizar 16 colores. Cambia la profundidad de color antes de continuar.^^Instalación cancelada.
+87=¡AVISO!^^Faltan algunos archivos de la biblioteca multimedia de Windows en el sistema.^Estos archivos son necesarios para instalar DirectX correctamente.^^Utiliza el disco de instalación de Windows 95/98 para instalar todos los accesorios Multimedia.^Se recomienda encarecidamente realizar esta actualización. ^^¿Quires salir del programa de instalación?
+88=Introduzce el servidor de correo electrónico (servidor POP).
+89=Selección de idioma
+90=Selecciona el idioma que quieras instalar.
+91¿En qué país vive usted?  
+92=¡AVISO! La actualización no se puede ejecutar.^^No se encuentran los archivos originales del producto en el sistema.^Reinstala el producto completo antes de continuar.^^El programa de instalación se cerrará.
+93=Acceso a Internet.
+94=¿Quieres tener acceso a Internet desde este producto?
+95=Sí, quiero tener acceso a Internet.
+96=No, desactivar el acceso a Internet.
+97=¿Quién es tu proveedor de servicios de Internet?
+98=Información de correo electrónico.
+99=Introduce tu dirección de correo electrónico (nombreusuario@servidor.com) y el servidor de correo electrónico (servidor POP).
+100=Dirección de correo.
+101=¡AVISO! ^El nombre del acceso directo definido no es válido.^El nombre del acceso directo contiene algún carácter no válido.^No se mostrará el icono del acceso directo.
+102=¡AVISO! El CD no contiene el archivo de origen.^^      Archivo:  %1% ^Origen:  %2%^^Se recomienda cancelar la instalación.^¿Quieres hacerlo ahora?
+103=¡AVISO! Error al copiar un archivo en el disco duro.^^      Archivo:   %1%^Origen:  %2%^    Destino:  %3%^^Se recomienda cancelar la instalación.^¿Quieres hacerlo ahora?
+104=Debe seleccionar el país para continuar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

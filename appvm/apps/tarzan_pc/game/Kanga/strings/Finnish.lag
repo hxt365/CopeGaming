@@ -1,0 +1,156 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Asennus
+1=Odota hetki, tarkistetaan, että järjestelmäsi täyttää vähimmäisvaatimukset
+2=Tarkistetaan tarvittava muisti...
+3=VAROITUS!^^Järjestelmässä on vain %1% MB vapaata RAM-muistia.^Tämä tuote vaatii vähintään %2% MB.^^Haluatko jatkaa?
+4=VAROITUS!^^Järjestelmässä on vain %1% MB vapaata RAM-muistia.^Tämä tuote vaatii vähintään %2% MB.^^Asennus peruutetaan.
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Tarkistetaan laitteistoa...
+6=VAROITUS!^Tämä tuote vaatii vähintään %1%  CPU. ^^Suorituskyky voi olla heikko!
+7=VAROITUS!^^Tämä tuote vaatii vähintään %1% CPU.^^Asennus peruutetaan.
+8=VAROITUS!^Tämä tuote vaatii jonkun seuraavista käyttöjärjestelmistä:^^%1%^^Nykyinen järjestelmä on %2%.^^Tämä tuote ei välttämättä toimi nykyisellä käyttöjärjestelmällä^Haluatko jatkaa?
+9=VAROITUS!^Tämä tuote vaatii jonkun seuraavista käyttöjärjestelmistä: ^^%1%^^Nykyinen järjestelmä on %2%.^^Tämä tuote ei toimi nykyisellä käyttöjärjestelmällä!^Asennus peruutetaan.
+10=Tarkistetaan järjestelmän levyasemaa... 
+11=VAROITUS!^^Valitussa levyasemassa ei ole tarpeeksi vapaata tilaa.^Vapauta %1% (%2% MB) tilaa tai valitse toinen levyasema ennen kuin jatkat.
+12=Tämä tuote vaatii näytöltä %1% tarkkuuden.
+13=VAROITUS! ^^Tämä tuote vaatii näytön väriasetusten muuttamisen tilaan %2% %3%. ^^^Haluatko muuttaa väriasetuksia nyt?
+14=Tämä tuote vaatii toimiakseen :
+15=Nykyinen järjestelmä on : 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Lisenssisopimus
+17=Lue seuraava lisenssisopimus :
+18=Hyväksytkö nämä ehdot?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Asennusvaihtoehdot
+20=Valitse yksi asennusvaihtoehto.
+21=Vakio asennus^Suositus, takaa parhaan suorituskyvyn.^Vaatii levytilaa: %1% kB ( %2% MB)
+22=Tilansäästäjä^Valitse silloin, jos on vähän levytilaa käytettävissä^Vaatii: %1% kB (%2% MB)
+23=Mukautettu^Voit asentaa valikoiden haluamasi osat.
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Valitse kohdehakemisto
+25=Tuote asennetaan seuraavaan hakemistoon:^^Jos haluat asentaa tähän hakemistoon, napsauta Seuraava.^^Jos haluat vaihtaa hakemistoa, napsauta Selaa ja valitse toinen hakemisto.^^Jos haluat lopettaa asennuksen, napsauta Peruuta.
+26=Kirjoita hakemistopolku tai valitse oletus.
+27=Valittuun hakemistoon ei voi kirjoittaa.^Valitse toinen hakemisto.
+28=Hakemistopolun kaikki merkit eivät kelpaa.^Hakemistopolun hyväksytyt merkit ovat:^ kirjaimet A - Z, numerot 1 - 9, hakemistokirjaimen jälkeiset kaksoispiste (:) ja kenoviiva (\).^Kirjoita uusi hakemistopolku.
+29=VAROITUS! ^Hakemistopolku on väärässä muodossa.  Kaikkien hakemistopolkujen^täytyy olla muotoa: <levyaseman kirjain>:\<polun nimi> ^Esimerkki: %1%.^Yritä uudelleen.
+30=VAROITUS!^Kansion nimi on liian pitkä.  Kansion nimi saa olla korkeintaan %1% merkkiä pitkä.^Yritä uudelleen.
+31=VAROITUS!...^^Valittu asema ei kelpaa.^Levyasema %1% on %2%.^Tätä asemaa ei voi käyttää asennuksen kohteena.^^Valitse kiintolevyasema.
+32=levyke- tai irrotettava asema
+33=CD-ROM
+34=Vahvista uusi hakemisto
+35=Kopioidaan ohjelmatiedostoja...
+36=Kopioidaan tiedostoa ...%1%
+37=Tiedostojen siirto valmis.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Hakemiston valinta
+39=Asennus lisää ohjelman kuvakkeet alla olevaan kansioon.^Voit kirjoittaa uuden kansion nimen, tai valita vanhan luettelosta.^Napsauta Seuraava, kun haluat jatkaa.
+40=Luodaan hakemistoa ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Tämä tuote vaatii DirectX-ohjaimen asennuksen.^^Haluatko jatkaa?
+42=VAROITUS!! ^^DirectX-ohjainta ei ole asennettu. ^Tuote ei välttämättä toimi oikein.
+43=VAROITUS!!^^Asemassa %1% ei ole tarpeeksi levytilaa tuotteen järjestelmätiedostojen asentamiseen.^Nämä tiedostot täytyy asentaa asemaan %1% ennen kuin ohjelma voidaan suorittaa oikein.^^Vapauta %2% tavua levytilaa ennen kuin jatkat. Asennus lopetetaan.
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Asennus valmis
+45=Onnittelut!!^Asennus on suoritettu oikein.
+46=Windows on käynnistettävä uudelleen ennen ohjelman käynnistystä.
+47=Kyllä, haluan käynnistää tietokoneen uudelleen nyt.
+48=Ei, haluan käynnistää tietokoneen uudelleen myöhemmin.
+49=Napsauta Valmis, kun haluat viimeistellä asennuksen.
+50=Kyllä, haluan katsoa Ohjetiedostoa.
+52=Kyllä, haluan käynnistää tuotteen nyt.
+54=Valitse asennustyyppi.
+56=Tämä vaihtoehto palaa hakemistopolun valintaan.
+57=Tämä vaihtoehto lopettaa asennuksen, jotta voit vapauttaa levytilaa.
+58=Suositus, toimii useimpien tietokoneiden kanssa
+59=Kokeineille käyttäjille, jotka haluavat valita itse kaikki asennusvaihtoehdot
+60=Asennustyypin vaihtoehdot
+61=Laita CD-levy #%1% asemaan
+62=VAROITUS! ^ %1% sovelluksen tiedostoa puuttuu!^Asennusta ei voi suorittaa oikein.^Ota yhteys asiakastukeen^^Asennus lopetetaan...
+64=Kansion nimen kaikki merkit eivät kelpaa.^Kaikkien merkkien täytyy olla kirjaimia (A - Z), numeroita (1 - 9) tai välilyöntejä.^Kirjoita toinen kansion nimi.
+66=CD-ROM-ongelma: Lähdetiedostoja ei löydy CD-levyltä.^%1% ^%2%	
+67=Virhe tiedoston kopioinnissa.^ Tiedostoa ei voi kopioida kiintolevylle.^ Asennus keskeytetään.^%1%^%2%^"%3%	
+69=Onnittelut!  Asennus on suoritettu.
+70=Katso Ohjetiedostoa.
+71=Ohjetiedosto
+72=Tämä tuote vaatii näytöltä %1% tarkkuuden.^Vaihda järjestelmän asetuksia.^Asennus lopetetaan.
+73=Tämä tuote vaatii näytöltä %1% tarkkuuden.^Haluatko vaihtaa asetuksia nyt?
+74=VAROITUS^^DirectX-ohjainta ei voitu asentaa. Levytila on lopussa.^Vapauta aseman levytilaa ja asenna uudelleen^Asennus lopetetaan.
+75=VAROITUS^^Virhe DirectX-asennuksessa. Virhe saattaa vaikuttaa ohjelman suorituskykyyn.
+76=VAROITUS^^CD-ROM-asema ei täytä tuotteen vaatimuksia.^Ohjelman suorituskyky voi olla heikko.^Asennus peruutetaan.
+77=WARNING^^CD-ROM-asema ei ole tarpeeksi nopea. ^Ohjelman suorituskyky voi olla heikko.^Haluatko jatkaa ?
+78=VAROITUS^^Asemassa %1% ei ole tarpeeksi levytilaa.^Vapauta %2% tavua (%3% MB) levytilaa tai valitse toinen asema.
+79=Valitse tuotteen kieli
+80=Ohjelmaryhmä on määritettävä.
+81=VAROITUS^^Virheellinen polku. Kohde ei voi sijaita kiintolevyn juurihakemistossa eikä Windows-hakemistossa.
+82=Haluatko asentaa ohjelman %1%?
+83=Onko tietokoneeseesi asennettu mikrofoni?
+84=Tämä ohjelma toimii parhaiten %1% tai paremmassa väritilassa. Järjestelmässä on tällä hetkellä käytössä väritila %2%.^^Saat peliin parhaan kuvanlaadun^ muuttamalla näytön asetuksia.^Haluatko muuttaa näytön asetuksia nyt?
+85=Tarkistetaan levytilaa...
+86=VAROITUS!^Tämä asennusohjelma vaatii vähintään 256 värin väripaletin.^Järjestelmässä on tällä hetkellä käytössä 16 värin väripaletti. Vaihda väripalettia, ennen kuin jatkat.^^Asennus keskeytetään.
+87=VAROITUS!^^Järjestelmästä puuttuu joitakin Windowsin multimediakirjastotiedostoja.^Nämä tiedostot vaaditaan DirectX-asennukseen.^^Asenna kaikki multimedia-apuohjelmat Windows 95/98 -asennuslevyn avulla.^Tee päivitys ennen asennuksen jatkamista.^^Haluatko lopettaa asennuksen?
+88=Sähköpostipalvelin
+89=Kielen valinta
+90=Valitse kieli, jonka haluat asentaa.
+91=Mikä maa ilm. suuntaa sinä asua ilman. paikka?
+92=VAROITUS !  Päivitystä ei voi suorittaa.^^Järjestelmästä puuttuu alkuperäisen tuotteen tiedostoja.^Asenna koko tuote uudelleen.^^Asennus keskeytetään.
+93=Internet-yhteys
+94=Haluatko ottaa tuotteen Internet-ominaisuudet käyttöön?
+95=Kyllä, ota Internet-ominaisuudet käyttöön.
+96=Ei, älä käytä Internetiä.
+97=Kirjoita Internet-palvelujen tarjoajan nimi?
+98=Sähköpostitiedot
+99=Kirjoita sähköpostiosoitteesi (käyttäjätunnus@palvelin.fi) ja sähköpostipalvelimen nimi (POP-palvelin)
+100=Sähköpostiosoite
+101=VAROITUS! ^Virheellinen pikakuvakkeen nimi.^Pikakuvakkeen nimessä on virheellinen merkki.^Pikakuvaketta ei voi luoda.
+102=VAROITUS! Lähdetiedostoa ei löydy CD-levyltä.^^      Tiedosto:  %1% ^Lähde:  %2%^^On suositeltavaa, että keskeytät asennuksen.^Haluatko keskeyttää asennuksen?
+103=VAROITUS! Tiedoston kopioiminen kiintolevylle ei onnistunut.^^      Tiedosto:   %1%^Lähde:  %2%^    Kohde:  %3%^^On suositeltavaa, että keskeytät asennuksen.^Haluatko keskeyttää asennuksen?
+104=Sinä viininmehu valikoitu kirjain maa ilm. suuntaa jatkaa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

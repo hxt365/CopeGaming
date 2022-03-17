@@ -1,0 +1,9 @@
+.app-list {
+  position: relative;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    transform: scale(1.2);
+    color: #f5f5f1;
+  }
+}

@@ -1,0 +1,169 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Installation
+1=Vent et øjeblik, mens det kontrolleres, om systemet opfylder minimumkravene...
+2=Kontrollerer hukommelsen...
+3=ADVARSEL!^^Systemet har kun %1% MB RAM.^Dette program kræver %2% MB RAM.^^Vil du fortsætte?
+4=ADVARSEL!^^Systemet har kun %1% MB RAM.^Dette program kræver %2% MB RAM.^^Installationen afsluttes.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Kontrollerer hardware...
+6=ADVARSEL!^Dette program kræver en %1% CPU eller kraftigere. ^^Dette kan påvirke ydeevnen!
+7=ADVARSEL!^^Dette program kræver en %1% CPU eller kraftigere.^^Installationen afsluttes.
+8=ADVARSEL!^Dette program kræver et af følgende operativsystemer:^^%1%^^Systemet er %2%.^^Dette program kan muligvis ikke køre under dette operativsystem.^Vil du fortsætte med installationen?
+9=ADVARSEL!^Dette program kræver et af følgende operativsystemer: ^^%1%^^Systemet er %2%.^^Dette program kan ikke køres!^Installationen afsluttes.
+10=Kontrollerer systemdiskdrev... 
+11=ADVARSEL!^^Det valgte drev har ikke tilstrækkelig plads.^Frigør %1% (%2% MB), eller vælg et andet diskdrev, før du fortsætter.
+12=Dette program kræver en skærmopløsning på %1%.
+13=ADVARSEL ! ^^Dette program kræver, at skærmen er sat til %2% %3% farver. ^^^Vil du ændre indstillingerne nu?
+14=Dette program kører kun under:
+15=Systemet er: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Licensaftale
+17=Læs følgende licensaftale:
+18=Kan du acceptere betingelserne i licensaftalen?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installationstyper
+20=Vælg den ønskede installationstype.
+21=Standardinstallation^Anbefales for at opnå den bedste ydeevne^Kræver: %1% KB ( %2% MB)
+22=Minimuminstallation^Anbefales, når der ikke er tilstrækkelig plads på harddisken^Kræver: %1% KB (%2% MB)
+23=Specialinstallation^Giver mulighed for installation af udvalgte komponenter
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Vælg installationsbibliotek
+25=Programmet installeres i følgende bibliotek:^^Klik på Næste for at installere programmet i dette bibliotek.^^Klik på Gennemse for at installere i et andet bibliotek, og vælg derefter det andet bibliotek.^^Klik på Annuller for at afbryde installationen.
+26=Angiv en sti, eller brug standardstien.
+27=Der kan ikke skrives til det valgte installationsbibliotek.^Vælg et andet bibliotek.
+28=Du har angivet et ugyldigt tegn.^Gyldige tegn er A til Z, 1 til 9, et kolon efter drevbogstavet og en skråstreg.^Angiv et gyldigt stinavn.
+29=ADVARSEL! ^Det angivne stinavn har et ugyldigt format. Alle stinavne skal have følgende format:^<DREVBOGSTAV>:\<STINAVN> F.eks.: %1%.^Prøv igen.
+30=ADVARSEL!^Det angivne mappenavn er for langt. Mappenavne må højst indeholde %1% tegn.^Prøv igen.
+31=ADVARSEL!...^^Ugyldig drevangivelse.^Drev %1% ser ud til at være et %2%.^Dette drev kan ikke bruges som installationsdrev.^^Vælg en harddisk.
+32=Diskettedrev eller udtageligt drev
+33=Cd-rom-drev
+34=Bekræft det nye bibliotek
+35=Kopierer programfiler...
+36=Kopierer filen...%1%
+37=Filoverførsel gennemført.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Valg af mappe
+39=Der føjes programikoner til mappen Programmer.^Du kan angive et nyt mappenavn eller vælge et på listen Eksisterende mapper.^Klik på Næste for at fortsætte.
+40=Opretter mappe...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Dette program kræver, at DirectX er installeret på computeren.^^Vil du fortsætte?
+42=ADVARSEL! ^^DirectX er ikke installeret. ^Dette program vil muligvis ikke fungere korrekt.
+43=ADVARSEL!^^Der er ikke tilstrækkelig plads på drev: %1% til at installere de systemfiler,^som kræves til dette program. Systemfilerne skal installeres på %1%-drevet.^^Frigør %2% byte på dette drev, før du fortsætter.^Afslutter installationen.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installationen er fuldført
+45=Installationen er fuldført.
+46=Du skal genstarte Windows, før du kan bruge programmet.
+47=Ja, jeg vil genstarte computeren.
+48=Nej, jeg genstarter computeren senere.
+49=Klik på Udfør for at fuldføre installationen.
+50=Ja, jeg vil se programmets Hjælp.
+52=Ja, jeg vil starte programmet nu.
+54=Vælg den ønskede installationstype.
+56=Denne indstilling vender tilbage til valg af installationssti.
+57=Denne indstilling afslutter installationsprogrammet^og giver dig mulighed for at frigøre diskplads.
+58=Anbefales til de fleste computere
+59=Kun for øvede brugere, som ønsker at tilpasse alle tilgængelige installationsindstillinger
+60=Installationstyper
+61=Indsæt cd nr. %1%
+62=ADVARSEL! ^ %1% programfiler mangler!^Installationsprogrammet kan ikke fuldføre installationen.^Kontakt kundesupport.^^Afbryder installationen...
+64=Du har brugt et ugyldigt tegn i mappenavnet.^Alle tegn skal være alfanumeriske, dvs.: A til Z, 1 til 9 og/eller mellemrum. ^Angiv et andet navn til mappen.
+66=Der er opstået et problem med cd-rom'en: Kildefilen findes ikke på cd-rom'en.^%1% ^%2%	
+67=Kopiering af filer mislykkedes.^ Det lykkedes ikke at kopiere en fil til harddisken.^ Afslutter installationen.^%1%^%2%^"%3%	
+69=Installationen er fuldført.
+70=Gennemse programmets Hjælp
+71=Hjælp
+72=Dette program kræver en skærmopløsning på %1%.^Rediger systemindstillingerne.^Afbryder installationen.
+73=Dette program kræver en skærmopløsning på %1%.^Vil du ændre systemindstillingerne nu?
+74=ADVARSEL!^^Installationen af DirectX lykkedes ikke. Der er ikke mere diskplads.^Frigør plads på drevet, og start installationen igen.^Afbryder installationen.
+75=ADVARSEL!^^Der opstod en fejl under installationen af DirectX.^Ydeevnen kan forringes.
+76=ADVARSEL!^^Cd-rom-drevet opfylder ikke dette programs krav.^Ydeevnen påvirkes muligvis.^Afbryder installationen.
+77=ADVARSEL!^^Cd-rom-drevet er ikke hurtigt nok. ^Ydeevnen påvirkes muligvis.^Vil du fortsætte?
+78=ADVARSEL!^^Der er ikke tilstrækkelig diskplads til at installere på drev %1%.^Frigør %2% byte (%3% MB), eller vælg et andet drev.
+79=Vælg det ønskede sprog
+80=Du skal angive en programgruppe
+81=ADVARSEL^^Du har angivet en ugyldig sti. Harddisken kan ikke være placeret i rodbiblioteket eller Windows-biblioteket.
+82=Vil du installere %1%?
+83=Er der installeret en mikrofon på computeren?
+84=Dette program er optimeret til minimum at køre i farvegrafiktilstanden %1%. Dit system er indstillet til %2% farver.^^Hvis du vil optimere grafikkvaliteten i spillet, ^skal du ændre skærmindstillingerne.^Vil du ændre skærmindstillingerne?
+85=Kontrollerer, om der er plads på harddisken...
+86=ADVARSEL!^^Installationsprogrammet kræver, at skærmen er indstillet til at vise mindst 256 farver. ^Dit system er indstillet til 16 farver. Skift antallet af skærmfarver, før du fortsætter.^^Installationen afsluttes.
+87=ADVARSEL!^^Der mangler nogle Windows DLL-multimediefiler på computeren.^Disse filer er nødvendige, for at DirectX kan installeres.^^Geninstaller alle filerne fra mappen med multimedier på cd'en med Windows 95/98.^Det anbefales, at du opgraderer. ^^Vil du afslutte installationen?
+88=E-mail-server
+89=Valg af sprog
+90=Vælg det sprog, du vil installere.
+91=Hvilke land å du være bosat inde? 
+92=ADVARSEL!  Opgraderingen kan ikke installeres.^^De originale programfiler findes tilsyneladende ikke på dit system.^Installer det originale produkt igen, inden du fortsætter.^^Installationen afsluttes.
+93=Adgang til Internettet
+94=Vil du tillade adgang til Internettet fra dette produkt?
+95=Ja, tillad adgang til Internettet.
+96=Nej, tillad ikke adgang til Internettet.
+97=Hvilken Internet-udbyder bruger du?
+98=E-mail-oplysninger
+99=Skriv din e-mail-adresse (brugernavn@server.dk) og navnet på din e-mail-server (POP-server)
+100=E-mail-adresse
+101=ADVARSEL! ^Der er angivet et ugyldigt genvejsnavn.^Et genvejsnavn indeholder et ugyldigt tegn.^Genvejsikonet vises ikke.
+102=ADVARSEL! Kildefilen findes ikke på cd'en.^^      Fil:  %1% ^Kilde:  %2%^^Det anbefales at afbryde installationen.^Vil du afbryde?
+103=ADVARSEL! En fil kunne ikke kopieres til harddisken.^^      Fil:   %1%^Kilde:  %2%^    Dest.:  %3%^^ Det anbefales at afbryde installationen.^ Vil du afbryde?	
+104=Du må vælge en land å fortsætte.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

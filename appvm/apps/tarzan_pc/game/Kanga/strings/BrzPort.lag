@@ -1,0 +1,178 @@
+
+
+;;  %1% are insert parameters  where %1% = parameter 1
+;;                                     %2% = parameter 2
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.
+;; These strings are provided here for easy adaptation of presently
+defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Programa de Instalação
+1=Aguarde enquanto verificamos se este sistema atende aos requisitos mínimos...
+2=Verificando os requisitos de memória...
+3=ATENÇÃO!^^Este sistema possui apenas %1% MB de RAM.^O produto requer %2% MB.^^Você deseja continuar?
+4=ATENÇÃO!^^Este sistema possui apenas %1% MB de RAM.^O produto requer %2% MB.^^Cancelando o Programa de Instalação.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Verificando o hardware...
+6=ATENÇÃO!^Este produto requer uma CPU de %1% ou mais avançada. ^^O desempenho será prejudicado!
+7=ATENÇÃO!^^Este produto requer uma CPU de %1% ou mais avançada. ^^Cancelando o Programa de Instalação.
+8=ATENÇÃO!^Este produto requer um dos seguintes sistemas operacionais:^^%1%^^Este sistema tem o %2%.^^Este produto talvez não funcione com este sistema operacional.^Continuar com a instalação?
+9=ATENÇÃO!^Este produto requer um dos seguintes sistemas operacionais:^^%1%^^Seu sistema é %2%.^^Este produto não funcionará!^Cancelando o Programa de Instalação.
+10=Verificando a unidade de disco do sistema...
+11=ATENÇÃO!^^A unidade selecionada não tem espaço livre suficiente.^Libere %1% (%2% MB) ou selecione outra unidade antes de continuar.
+12=Este produto requer uma resolução de tela de %1%.
+13=ATENÇÃO! ^^Este produto requer que o seu monitor esteja definido para %2% %3% cores. ^^^Você deseja alterar estas configurações agora?
+14=Este produto funciona apenas com:
+15=Este sistema tem:
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Acordo de Licença
+17=Leia o seguinte acordo de licença:
+18=Você aceita estes termos?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Opções de Instalação
+20=Selecione uma das opções de instalação.
+21=Instalação Padrão^Recomendada para o melhor desempenho^Requer: %1% KB (%2% MB)
+22=Mínima^Melhor opção quando o espaço em disco é limitado^Requer: %1% KB (%2% MB)
+23=Personalizada^Permite a instalação seletiva de componentes
+
+;;--------
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Escolha o local de destino
+25=O Programa de Instalação instalará este produto no seguinte diretório:^^Para instalar neste diretório, clique em Avançar.^^Para instalar em outro diretório, clique em Procurar e selecione o diretório.^^Clique em Cancelar para sair da instalação.
+26=Digite o caminho ou selecione o padrão.
+27=O Programa de Instalação não está conseguindo gravar no local selecionado.^Escolha outro local.
+28=Você digitou caracteres inválidos.^Os caracteres válidos são: A a Z, 1 a 9, dois-pontos após a letra da unidade,^e barra invertida. Digite um nome de caminho válido.
+29=ATENÇÃO! ^O caminho digitado está em formato inválido. Os caminhos devem ter ^o seguinte formato: <LETRA DA UNIDADE>:\\<CAMINHO> ^Por exemplo: %1%.^Tente novamente.
+30=ATENÇÃO!^O nome da pasta digitado é muito longo.^Os nomes de pastas limitam-se a: %1% caracteres.^Tente novamente.
+31=ATENÇÃO!...^^Seleção de unidade inválida.^A Unidade de disco %1% parece ser %2%.^Esta unidade não pode ser usada como destino de instalação.^^Selecione uma unidade de disco rígido.
+32=Unidade de disquete ou unidade removível
+33=CD-ROM
+34=Confirme o novo diretório
+35=Copiando arquivos do programa...
+36=Copiando o arquivo ...%1%
+37=Transferíncia de arquivo completa.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Seleção de pasta
+39=O Programa de Instalação adicionará os ícones do programa à seguinte pasta.^Digite um novo nome de pasta ou selecione um nome na lista Pastas^Existentes. Clique em Avançar para continuar.
+40=Criando diretório ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Este produto requer a instalação do DirectX.^^Deseja continuar?
+42=ATENÇÃO!! ^^O DirectX não foi instalado. ^Este produto poderá não funcionar corretamente.
+43=ATENÇÃO!!^^Este sistema não tem espaço suficiente no %1%^para instalar os arquivos de sistema necessários.^^Estes arquivos são necessários para a execução correta do produto ^e devem ser colocados na unidade %1%.^^Para continuar, libere %2% bytes de espaço na unidade. Saindo da instalação.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=A Instalação está completa
+45=Parabéns!!^A instalação foi concluída com íxito.
+46=Š necessário reiniciar o Windows para poder começar.
+47=Sim, desejo reiniciar meu computador agora.
+48=Não, reiniciarei meu computador mais tarde.
+49=Clique em Concluir para completar a instalação.
+50=Sim, desejo ver o Arquivo de Ajuda.
+52=Sim, desejo iniciar o produto agora.
+54=Selecione o tipo de instalação desejada.
+56=Esta opção fará você voltar à seleção de caminho.
+57=Esta opção encerrará o Programa de Instalação e ^permitirá que você libere espaço no disco.
+58=Recomendado para a maioria dos computadores.
+59=Para usuários avançados que desejam personalizar as opções de configuração.
+60=Opções de tipos de Instalação
+61=Insira o CD #%1%
+62=ATENÇÃO! ^ Os arquivos do aplicativo %1% estão faltando!^O Programa de Instalação não pode concluir corretamente a instalação.^Ligue para o Suporte ao Cliente^^Cancelando a instalação...
+64=Foram digitados alguns caracteres inválidos no nome da pasta.^Todos os caracteres devem ser alfanuméricos: A a Z, 1 a 9 e/ou espaços. ^Digite outro nome de pasta.
+66=Problema com o CD-ROM: o arquivo de origem não existe no CD.^%1% ^%2%
+67=Falha na cópia do arquivo.^ Falha ao copiar um arquivo na unidade de disco rígido.^ Cancelando a instalação.^%1%^%2%^"%3%
+69=Parabéns! Você completou a instalação.
+70=Ler Arquivo de Ajuda
+71=Arquivo de Ajuda
+72=Este produto requer uma resolução de tela de %1%.^Altere as configurações do sistema.^Cancelando a instalação.
+73=Este produto requer uma resolução de tela de %1%^Deseja alterar o sistema agora?
+74=ATENÇÃO:^^Falha na instalação do DirectX. Não h· espaço no disco.^Libere espaço na unidade de disco e instale novamente.^Cancelando a instalação.
+75=ATENÇÃO:^^Erro na instalação do DirectX. O desempenho poderá ser prejudicado.
+76=ATENÇÃO:^^A unidade de CD-ROM não atende aos requisitos deste produto.^O desempenho poderá ser prejudicado.^Cancelando o Programa de Instalação.
+77=ATENÇÃO:^^O CD-ROM não é suficientemente rápido. ^O desempenho poderá ser prejudicado.^Deseja continuar?
+78=ATENÇÃO:^^Não há espaço suficiente em disco para instalar na unidade %1%^Libere %2% bytes (%3% MB) ou selecione uma outra unidade.
+79=Selecione o idioma do produto.
+80=Um Grupo de Programas deve ser especificado.
+81=ATENÇÃO!^^Seleção de caminho incorreta. O disco rígido não pode estar^localizado no diretório raiz ou no diretório do Windows.
+82=Deseja instalar o %1%?
+83=O seu computador tem microfone?
+84=Este programa foi otimizado para rodar em uma^resolução de cor de %1% ou superior. O sistema parece estar configurado para %2% cores. ^^Para maximizar a qualidade gráfica do jogo^mude as configurações de vídeo.^Deseja fazer esta mudança agora?
+85=Verificando o espaço do disco rígido...
+86=ATENÇÃO!^^Este Installer exige que o vídeo seja configurado para 256 cores ou mais.^O sistema está configurado para 16 cores. Mude a configuração antes de continuar. ^^Abortando a instalação.
+87=ATENÇÃO!^^Alguns arquivos da biblioteca de multimídia não estão no sistema.^Tais arquivos são necessários para uma instalação satisfatória do DirectX.^^Instale todos os acessórios de Multimídia usando o disco de instalação do Windows 95/98.^Recomenda-se enfaticamente atualizar.^^Sair da instalação?
+88= Servidor de correio 
+89=Seleção de idioma
+90=Selecione o idioma que deseja instalar.
+91=Qual naçao lhe habitar em?
+92=ATENÇÃO! A atualização não pode ser efetuada.^^Seu sistema parece não conter os arquivos originais do produto.^Reinstale todo o produto antes de continuar.^^Saindo do instalador.
+93=Acesso à Internet
+94=Deseja permitir o acesso à Internet a partir deste produto?
+95=Sim, permitir acesso à Internet.
+96=Não, desativar acesso à Internet.
+97=Quem é seu provedor de serviços de Internet?
+98=Informações sobre correio eletrônico
+99=Digite seu endereço de correio eletrônico (nomedousuario@servidor.com.br) e seu servidor de correio (servidor POP)
+100=Endereço de correio eletrônico
+101=ATENÇÃO! ^Nome de atalho inválido definido.^Um nome de atalho contém um caractere inválido.^O ícone do atalho não será exibido.
+102= ATENÇÃO! O arquivo de origem não existe no CD.^^      Arquivo:  %1% ^Origem:  %2%^^Recomenda-se enfaticamente interromper a instalação.^Deseja interromper?
+103= ATENÇÃO! Um arquivo deixou de  ser copiado no seu disco rígido.^^      Arquivo:   %1%^Origem:  %2%^    Dest:  %3%^^Recomenda-se enfaticamente interromper a instalação é.^Deseja interromper?
+104=Deve seleccionar um país continuar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

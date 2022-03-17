@@ -1,0 +1,14 @@
+- id: hercules
+  name: Disney's Hercules
+  type: game
+  poster_url: 'https://m.media-amazon.com/images/I/511V6QBV6PL._AC_.jpg'
+  device:
+    - pc
+
+- id: tarzan
+  name: Disney's Tarzan
+  poster_url: 'https://m.media-amazon.com/images/I/51YSBXMJ6AL._AC_SX342_.jpg'
+  type: game
+  device:
+    - pc
+    - mobile

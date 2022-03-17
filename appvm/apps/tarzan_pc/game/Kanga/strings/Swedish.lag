@@ -1,0 +1,141 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Installation
+1=Vänta medan vi kontrollerar att datorn uppfyller minimikraven...
+2=Kontrollerar minneskraven...
+3=VARNING!^^Datorn innehåller bara %1% MB RAM-minne.^För den här produkten krävs %2% MB.^^Vill du fortsätta?
+4=VARNING!^^Datorn innehåller bara %1% MB RAM-minne.^För den här produkten krävs %2% MB.^^Installationen avbryts.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Kontrollerar hårdvaran...
+6=VARNING!^För den här produkten krävs en %1%-processor eller bättre. ^^Prestanda kommer att påverkas!
+7=VARNING!^^För den här produkten krävs en %1%-processor eller bättre.^^Installationen avbryts.
+8=VARNING!^För den här produkten krävs något av följande operativsystem:^^%1%^^På den här datorn körs %2%.^^Den här produkten kommer kanske inte att fungera med det här operativsystemet^Vill du fortsätta installationen?
+9=VARNING!^För den här produkten krävs något av följande operativsystem: ^^%1%^^På den här datorn körs %2%.^^Den här produkten kommer inte att fungera!^Installationen avbryts.
+10=Kontrollerar datorns diskenhet... 
+11=VARNING!^^Det finns inte tillräckligt med ledigt utrymme på den enhet du har valt.^Frigör %1% (%2% MB) eller välj en annan enhet innan du fortsätter.
+12=För den här produkten krävs skärmupplösningen %1%.
+13=VARNING! ^^För den här produkten krävs att bildskärmen ställs in för %2% %3% färg. ^^^Vill du ändra inställningarna nu?
+14=För den här produkten krävs:
+15=Den här datorn är en: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Licensavtal
+17=Läs det här licensavtalet:
+18=Accepterar du villkoren?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installationsalternativ
+20=Välj ett av följande installationsalternativ.
+21=Standardinstallation^Rekommendederas för bästa prestanda^Krav: %1% KB ( %2% MB)
+22=Minimal^Bästa alternativ om diskutrymmet är begränsat^Krav: %1% KB (%2% MB)
+23=Anpassad^Här kan du välja vilka komponenter som ska installeras
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Välj destination
+25=Produkten kommer att installeras i följande katalog:^^Om du vill installera i den här katalogen klickar du på Nästa.^^Om du vill byta klickar du på Bläddra och väljer en annan katalog.^^Klicka på Avbryt om du vill avbryta installationen.
+26=Ange sökväg eller välj standardalternativet.
+27=Installationsprogrammet kan inte skriva till den plats du valt.^Välj en annan plats.
+28=Du har angett ogiltiga tecken.^Giltiga tecken är A till Z, 1 till 9, ett kolon efter enhetsbokstaven samt^bakvänt snedstreck. Ange en giltig sökväg.
+29=VARNING! ^Angiven sökväg har ogiltigt format. Alla sökvägar måste anges^med följande format: <ENHETSBOKSTAV>:\<SÖKVÄG> ^Exempel: %1%.^Försök igen.
+30=VARNING!^Angivet mappnamn är för långt. Mappnamn får inte vara längre än: %1% tecken.^Försök igen.
+31=VARNING!...^^Ogiltig enhet vald.^Diskenhet %1% verkar vara en %2%.^Den här enheten kan inte användas som målenhet för installationen.^^Välj en fast hårddisk.
+32=Diskettenhet eller löstagbar enhet
+33=CD-ROM
+34=Bekräfta ny katalog
+35=Kopierar programfiler...
+36=Kopierar fil ...%1%
+37=Filöverföringen är klar.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Välj mapp
+39=Installationsprogrammet kommer att lägga till programikoner i den mapp som^visas nedan. Du kanske vill ange ett annat mappnamn eller välja ett från^listan med befintliga mappar. Klicka på Nästa för att fortsätta.
+40=Skapar katalogen ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=För den här produkten krävs installation av DirectX.^^Vill du fortsätta?
+42=VARNING!! ^^DirectX har inte installerats. ^Den här produkten kommer kanske inte att fungera korrekt.
+43=VARNING!!^^Det finns inte tillräckligt med diskutrymme på enhet %1%^för att installera de^systemfiler som den här produkten behöver. Dessa filer krävs för att produkten^ska fungera på rätt sätt och de måste ligga på enhet %1%.^^Frigör %2% byte på den här enheten innan du fortsätter. Installationen avslutas.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installationen är klar
+45=Grattis!!^Installationen är nu klar.
+46=Du måste starta om Windows innan du kan börja.
+47=Ja, jag vill starta om datorn nu.
+48=Nej, jag vill starta om datorn senare.
+49=Klicka på Slutför för att slutföra installationen.
+50=Ja, jag vill se hjälpfilen.
+52=Ja, jag vill starta programmet nu.
+54=Välj vilken typ av installation du vill göra.
+56=Med det här alternativet kommer du tillbaka till sökvägsangivelsen.
+57=Med det här alternativet avlutas installationen ^och du kan frigöra diskutrymme.
+58=Rekommenderas för de flesta datorer
+59=För avancerade användare som vill kunna påverka alla installationsalternativen
+60=Installationsalternativ
+61=Sätt in CD #%1%
+62=VARNING! ^ %1% programfiler saknas!^Installationen kan inte slutföras på rätt sätt.^Ring kundsupport^^Installationen avbryts...
+64=Du har angett ogiltiga tecken i mappnamnet.^Alla tecken måste vara alfanumeriska, dvs: A till Z, 1 till 9 och/eller^blanksteg. Ange ett annat mappnamn.
+66=Problem med CDROM: Källfilen finns inte på CD:n.^%1% ^%2%	
+67=Filkopieringsfel.^ En fil har inte kunnat kopieras till hårddisken.^ Installationen avbryts.^%1%^%2%^"%3%	
+69=Grattis! Installationen är nu klar.
+70=Visa hjälpfil
+71=Hjälpfil
+72=För den här produkten krävs en skärmupplösning på %1%.^Ändra systeminställningarna.^Installationen avbryts.
+73=För den här produkten krävs en skärmupplösning på %1%^Vill du ändra systeminställningarna nu?
+74=VARNING^^DirectX kunde inte installeras. För lite diskutrymme.^Frigör utrymme på den enhet där Windows är installerat och installera igen.^Installationen avbryts.
+75=VARNING^^Installationsfel för DirectX. Prestanda kan påverkas.
+76=VARNING^^CDROM-enheten verkar inte uppfylla kraven för den här produkten.^Prestanda kan påverkas.^Installationen avbryts.
+77=VARNING^^CDROM-enheten verkar inte vara tillräckligt snabb. ^Prestanda kan påverkas.^Vill du fortsätta?
+78=VARNING^^Det finns inte tillräckligt med diskutrymme för installation på enhet %1%^Frigör %2% byte (%3% MB) eller välj en annan enhet.
+79=Välj språkversion för produkten
+80=Du måste ange programgrupp.
+81=VARNING !^^Ogiltig sökväg. Katalogen får ej placeras i rotkatalogen eller Windows-katalogen.
+82=Vill du installera vår %1% ?
+83=Har du en mikrofon ansluten till datorn?
+84=Det här programmet är optimerat för %1% färger eller bättre. Systemet verkar vara inställt för %2% färger.^^ Om du vill maximera spelets grafikkvalitet ^ändrar du grafikinställningarna till ett högre värde.^Vill du ändra inställningarna nu?
+85=Kontrollerar hårddiskutrymmet...
+86=VARNING ! ^^Installationsprogrammet kräver att bildskärmen är inställd för 256 färger eller högre. ^Systemet är nu inställt för 16 färger. Ändra färgdjupet innan du fortsätter.^^Installationen avbryts.
+87=VARNING !^^Några Windows-multimediabibliotek saknas på systemet.^Filerna krävs för att DirectX ska installeras.^^Installera alla multimediatillbehör från installationsdisken för Windows 95/98.^Du bör uppgradera. ^^Vill du avsluta installationsprogrammet?
+88=E-postserver
+89=Välj språk
+90=Välj det språk som du vill installera.
+91=I vilket land bor du?	
+92=VARNING! Uppgraderingen kan inte genomföras.^^Originalproduktens filer verkar inte finnas på datorn.^Installera om produkten.^^Installationsprogrammet avslutas.
+93=Internet-åtkomst
+94=Vill du tillåta Internet-åtkomst från produkten?
+95=Ja, tillåt Internet-åtkomst.
+96=Nej, avaktivera Internet-åtkomst.
+97=Vilken Internet-leverantör använder du?
+98=E-postinformation
+99=Ange din e-postadress (användarnamn@server.com) och e-postserver (POP-server)
+100=E-postadress
+101=VARNING! ^Ogiltigt genvägsnamn har angetts.^Ett genvägsnamn innehåller ett otillåtet tecken.^Ingen ikon kommer att visas för genvägen.
+102=VARNING! Källfilen finns inte på cd-skivan.^^      Fil:  %1% ^Källa:  %2%^^Du bör avbryta installationen.^Vill du avbryta?
+103=VARNING! En fil kunde inte kopieras till hårddisken.^^      Fil:   %1%^Källa:  %2%^    Mål:  %3%^^Du bör avbryta installationen.^Vill du avbryta?	
+104=Du måsta välja land innan du fortsätter.

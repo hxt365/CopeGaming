@@ -1,0 +1,195 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Installation
+1=Vérification de la configuration de votre système ; veuillez attendre...
+2=Vérification de la mémoire en cours...
+3=ATTENTION !^^Votre système n'a que %1% Mo de RAM.^Ce produit requiert %2% Mo.^^Voulez-vous continuer ?
+4=ATTENTION !^^Votre système n'a que %1% Mo de RAM.^Ce produit requiert %2% Mo.^^Installation annulée.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Vérification du matériel en cours...
+6=ATTENTION !^Ce produit requiert un processeur %1% ou supérieur. ^^Les performances en seront affectées !
+7=ATTENTION !^^Ce produit requiert un processeur %1% ou supérieur.^^Installation annulée.
+8=ATTENTION !^Ce produit requiert un des systèmes d'exploitation suivants :^^%1%^^Votre système utilise %2%.^^Ce produit peut ne pas fonctionner avec ce système d'exploitation.^Continuer l'installation ?
+9=ATTENTION !^Ce produit requiert un des systèmes d'exploitation suivants : ^^%1%^^Votre système utilise %2%.^^Ce produit ne fonctionnera pas !^Installation annulée.
+10=Vérification de l'unité de disque du système... 
+11=ATTENTION !^^Espace insuffisant sur le lecteur sélectionné.^Veuillez libérer %1% (%2% Mo) ou sélectionner un autre lecteur pour continuer.
+12=Ce produit requiert une résolution d'écran de %1%.
+13=ATTENTION ! ^^Ce produit requiert un affichage en %2% %3% couleurs. ^^^Voulez-vous modifier votre configuration maintenant ?
+14=Ce produit ne fonctionne que sur :
+15=Votre système est un : 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Accord de licence
+17=Veuillez lire l'accord de licence suivant :
+18=Acceptez-vous les termes de la licence ?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Options de type d'installation
+20=Veuillez sélectionner une des options suivantes :
+21=Installation standard^Recommandée pour des performances optimales.^Requiert: %1% Ko. ( %2% Mo.)
+22=Installation minimum^Conseillée si l'espace disque est limité.^Requiert: %1% Ko. (%2% Mo.)
+23=Personnalisée^Permet de sélectionner les éléments à installer.
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Choisissez un emplacement de destination.
+25=Le programme d'installation va installer ce produit dans le répertoire suivant :^^Pour accepter ce répertoire, cliquez sur Suivant.^^Pour choisir un autre répertoire, cliquez sur Parcourir et sélectionnez-le.^^Cliquez sur Quitter pour abandonner l'installation.
+26=Veuillez entrer le chemin d'accès ou sélectionner l'option par défaut.
+27=Le programme d'installation ne peut pas utiliser l'emplacement sélectionné.^Veuillez sélectionner un autre emplacement.
+28=Vous avez saisi un caractère non valide.^Les caractères valides sont A à Z, 1 à 9, un signe deux-points après la lettre du lecteur et la barre oblique inverse. Veuillez entrer un nom de chemin d'accès valide.
+29=ATTENTION ! ^Format du nom du chemin d'accès non valide.  Tout nom de chemin d'accès requiert^le format suivant: <LETTRE DU LECTEUR>:\<CHEMIN D'ACCES> ^Exemple : %1%.^Veuillez réessayer.
+30=ATTENTION !^Le nom du dossier est trop long.  Les noms de dossier sont limités à : %1% caractères.^Veuillez réessayer.
+31=ATTENTION!...^^Lecteur sélectionné non valide.^Le lecteur %1% semble être un %2%.^Il ne peut pas être utilisé en tant que destination d'installation.^^Veuillez sélectionner un disque dur fixe.
+32=Disquette ou lecteur amovible
+33=CD-ROM
+34=Confirmer le nouveau répertoire.
+35=Copie des fichiers programme en cours...
+36=Copie du fichier ...%1% en cours...
+37=Transfert des fichiers terminé.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Sélection du dossier
+39=Le programme d'installation va ajouter des icônes de programme au dossier indiqué ci-dessous.^Vous pouvez taper un nouveau nom de dossier ou le sélectionner dans la liste^des Dossiers existants. Cliquez sur Suivant pour continuer.
+40=Création du répertoire ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Ce produit requiert l'installation de DirectX.^^Continuer ?
+42=ATTENTION !! ^^DirectX n'a pas été installé. ^Ce produit peut ne pas fonctionner correctement.
+43=ATTENTION !!^^Espace insuffisant sur le lecteur %1%^pour installer les fichiers système requis pour ce produit. Ces fichiers, nécessaires à la bonne exécution du programme, doivent être placés sur votre lecteur %1%.^^Veuillez libérer %2% octets sur ce lecteur avant de continuer.  Installation interrompue.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installation terminée.
+45=Félicitations !!^Installation terminée avec succès.
+46=Vous devez redémarrer Windows avant de commencer.
+47=Oui, redémarrer l'ordinateur maintenant.
+48=Non, redémarrer l'ordinateur plus tard.
+49=Cliquez sur Terminer pour terminer l'installation.
+50=Oui, afficher le fichier d'Aide.
+52=Oui, démarrer le programme maintenant.
+54=Veuillez sélectionner le type d'installation désiré.
+56=Cette option vous renverra à la sélection du chemin d'accès.
+57=Cette option permet de quitter l'installation pour ^libérer de l'espace disque.
+58=Conseillée pour la plupart des ordinateurs.
+59=Pour les utilisateurs expérimentés souhaitant personnaliser toutes les options d'installation disponibles.
+60=Options de type d'installation
+61=Veuillez insérer le CD-ROM #%1%.
+62=ATTENTION ! ^ %1% fichiers d'application manquants !^Le programme d'installation ne peut pas terminer correctement votre installation.^Veuillez contacter notre service d'assistance^^Installation interrompue...
+64=Vous avez entré des caractères non valides dans votre nom de dossier.^Tous les caractères doivent être alphanumériques : A à Z, 1 à 9, espaces. ^Veuillez entrer un autre nom de dossier.
+66=Problème sur le CD-ROM : le fichier source est absent du CD-ROM.^%1% ^%2%	
+67=Echec de copie de fichier.^ Un fichier n'a pas pu être copié sur votre disque dur.^ Installation interrompue.^%1%^%2%^"%3%	
+69=Félicitations !  Installation terminée.
+70=Lire le fichier d'aide
+71=Fichier d'aide
+72=Ce produit requiert une résolution d'écran de %1%.^Veuillez modifier la configuration de votre système.^Installation interrompue.
+73=Ce produit requiert une résolution d'écran de %1%^Voulez-vous modifier votre configuration maintenant ?
+74=ATTENTION^^Echec d'installation de DirectX. Espace disque insuffisant.^Veuillez libérer de l'espace sur votre lecteur Windows et réinstaller^Installation interrompue.
+75=ATTENTION^^Erreur d'installation de DirectX. Les performances risquent d'être diminuées.
+76=ATTENTION^^Votre lecteur de CD-ROM ne semble pas conforme aux exigences de ce produit.^Les performances risquent d'être diminuées.^Installation annulée.
+77=ATTENTION^^Votre lecteur de CD-ROM ne semble pas suffisamment rapide. ^Les performances risquent d'être diminuées.^Voulez-vous continuer ?
+78=ATTENTION^^Espace disque insuffisant pour l'installation sur le lecteur %1%^Veuillez libérer %2% octets (%3% Mo) ou sélectionner un autre lecteur.
+79=Veuillez sélectionner la langue du produit.
+80=Un groupe de programmes doit être spécifié.
+81=AVERTISSEMENT^^Sélection de chemin non valide. L'emplacement du disque dur ne peut pas être défini dans le répertoire racine ou Windows.
+83=Votre ordinateur dispose-t-il d'un microphone ?
+84=Ce programme a été conçu pour une exécution en %1% couleurs ou plus. Votre système semble être défini sur %2% couleurs.^^Pour optimiser la qualité graphique de votre jeu, ^veuillez modifier vos paramètres d'affichage en vue d'une meilleure qualité graphique.^Voulez-vous modifier vos paramètres d'affichage maintenant ?
+85=Vérification de l'espace disque en cours...
+86=AVERTISSEMENT ! ^^Ce programme d'installation requiert un affichage en 256 couleurs ou plus. ^Votre système est actuellement configuré en 16 couleurs. Veuillez modifier votre configuration avant de continuer.^^Installation interrompue.
+87=AVERTISSEMENT !^^Certains fichiers de bibliothèque multimédia Windows sont manquants sur votre système.^Ces fichiers sont nécessaires pour une installation de DirectX réussie.^^En utilisant votre disquette d'installation Windows 95/98, veuillez installer tous les accessoires multimédias.^Une mise à niveau est vivement recommandée. ^^Quitter l'installation ? 
+88=Serveur de messagerie
+89=Sélection de la langue
+90=Veuillez sélectionner la langue à installer.
+91=Quel est votre pays de résidence?
+92=AVERTISSEMENT !  La mise à niveau ne peut pas être effectuée.^^Il semble que les fichiers du produit d'origine sont manquants sur votre système.^Veuillez réinstaller l'intégralité du produit avant de continuer.^^Fermeture du programme d'installation.
+93=Accès à Internet
+94=Voulez-vous autoriser l'accès à Internet à partir de ce produit ?
+95=Oui, autoriser l'accès à Internet.
+96=Non, désactiver l'accès à Internet.
+97=Qui est votre fournisseur de services Internet ?
+98=Informations sur la messagerie
+99=Veuillez entrer votre adresse de messagerie (nomutilisateur@serveur.com) et votre serveur de messagerie (serveur POP)
+100=Adresse de messagerie
+101=AVERTISSEMENT ! ^Nom de raccourci défini non valide.^Un nom de raccourci contient un caractère non valide.^L'icône de raccourci ne sera pas visible.
+102=AVERTISSEMENT ! Le fichier source n'existe pas sur le CD-ROM.^^      Fichier :  %1% ^Source :  %2%^^Il est vivement recommandé d'abandonner l'installation.^Abandonner ?
+103=AVERTISSEMENT ! Un fichier n'a pas pu être copié sur votre disque dur.^^      Fichier :   %1%^Source :  %2%^    Destination :  %3%^^Il est vivement recommandé d'abandonner l'installation.^Abandonner ?
+104=Vous devez sélectionner un pays pour continuer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

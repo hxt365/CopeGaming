@@ -1,0 +1,192 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Setup
+1=Het systeem wordt gecontroleerd op de minimumvereisten...
+2=Bezig met controle van het geheugen...
+3=WAARSCHUWING!^^Het systeem bevat slechts %1% MB RAM.^Voor dit product is %2% MB vereist.^^Wilt u doorgaan met installeren?
+4=WAARSCHUWING!^^Het systeem bevat slechts %1% MB RAM.^Voor dit product is %2% MB vereist.^^De installatie wordt afgebroken.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Bezig met controle van de hardware...
+6=WAARSCHUWING!^^Voor dit product is een %1%-processor of sneller vereist. ^^De prestaties worden nadelig beïnvloed!
+7=WAARSCHUWING!^^Voor dit product is een %1%-processor of sneller vereist.^^De installatie wordt afgebroken.
+8=WAARSCHUWING!^Voor dit product is een van de volgende besturingssystemen vereist:^^%1%^^Het systeem heeft %2%.^^Het is mogelijk dat dit product niet werkt met dit besturingssysteem.^Wilt u doorgaan met installeren?
+9=WAARSCHUWING!^Voor dit product is een van de volgende besturingssystemen vereist: ^^%1%^^Het systeem heeft %2%.^^Dit product werkt niet met dit besturingssysteem!^De installatie wordt afgebroken.
+10=Bezig met controle van schijfstation... 
+11=WAARSCHUWING!^^Op het door u geselecteerde station is onvoldoende ruimte beschikbaar.^Maak %1% (%2% MB) vrij of selecteer een ander station voordat u doorgaat.
+12=Voor dit product is een schermresolutie van %1% vereist.
+13=WAARSCHUWING! ^^Voor dit product dient het beeldscherm te zijn ingesteld op %2% %3% kleuren. ^^^Wilt u deze instelling nu wijzigen?
+14=Dit product kan alleen worden uitgevoerd op:
+15=Uw systeem is een: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Licentieovereenkomst
+17=Lees de onderstaande licentieovereenkomst door:
+18=Gaat u akkoord met deze voorwaarden?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installatieopties
+20=Selecteer een installatieoptie.
+21=Standaardinstallatie^Aanbevolen voor optimale prestaties^Benodigde ruimte: %1% KB ( %2% MB)
+22=Ruimtebesparend^Aanbevolen bij beperkte schijfruimte^Benodigde ruimte: %1% KB (%2% MB)
+23=Aangepast^Biedt de mogelijkheid tot selectieve installatie van componenten
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Doellocatie kiezen
+25=Het product wordt geïnstalleerd in de volgende directory:^^Klik op Volgende als u het product in deze directory wilt installeren.^^Als u het product in een andere directory wilt installeren, klikt u op Bladeren^en selecteert u een andere directory.^^Klik op Annuleren om de installatie af te sluiten.
+26=Voer een pad in of selecteer de standaardlocatie.
+27=Er kan niet worden geschreven naar de door u geselecteerde locatie.^Selecteer een andere locatie.
+28=U hebt ongeldige tekens opgegeven.^U kunt de volgende tekens gebruiken:^A t/m Z, 1 t/m 9, een dubbele punt na de stationsaanduiding en backslash.^Geef een geldige padnaam op.
+29=WAARSCHUWING! ^Het opgegeven pad heeft een ongeldige opmaak. Padnamen moeten deze opmaak hebben:^<STATIONSAANDUIDING>:\<PAD>, bijvoorbeeld: %1%.^Probeer het nogmaals.
+30=WAARSCHUWING!^De opgegeven mapnaam is te lang.^Mapnamen kunnen uit maximaal %1% tekens bestaan.^Probeer het nogmaals.
+31=WAARSCHUWING!^^Ongeldig station.^Station %1% lijkt een %2% te zijn.^U kunt dit station niet als doellocatie voor een installatie gebruiken.^^Selecteer een interne harde schijf.
+32=Diskette- of verwijderbaar station
+33=CD-ROM
+34=Nieuwe directory bevestigen
+35=Bezig met kopiëren van de programmabestanden...
+36=Bezig met kopiëren van bestand ...%1%
+37=Bestandsoverdracht is voltooid.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Map selecteren
+39=Programmapictogrammen worden toegevoegd aan de onderstaande programmamap.^Geef desgewenst een nieuwe map op of selecteer een map in de lijst met bestaande mappen.^Klik op Volgende om verder te gaan.
+40=Bezig met maken van directory...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Voor dit product is de installatie van DirectX vereist.^^Wilt u doorgaan?
+42=WAARSCHUWING!! ^^DirectX is niet geïnstalleerd. ^Dit product werkt mogelijk niet correct.
+43=WAARSCHUWING!!^^Er is onvoldoende schijfruimte beschikbaar op station: %1%^voor de installatie van de voor het product vereiste systeembestanden.^Deze bestanden zijn noodzakelijk voor een correcte werking van dit product^en dienen te worden geïnstalleerd op station %1%.^^Maak %2% bytes ruimte vrij op dit station voordat u verdergaat.^Het installatieprogramma wordt afgesloten.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installatie voltooid
+45=De installatie is voltooid.
+46=U dient Windows opnieuw te starten voordat u kunt beginnen.
+47=Ja, ik wil de computer nu opnieuw opstarten.
+48=Nee, ik wil de computer later opnieuw opstarten.
+49=Klik op Voltooien om de installatie af te ronden.
+50=Ja, ik wil het Help-bestand bekijken.
+52=Ja, ik wil het product nu starten.
+54=Selecteer de gewenste installatiemethode.
+56=Met deze optie keert u terug naar het geselecteerde pad.
+57=Met deze optie sluit u het installatieprogramma af^zodat u schijfruimte vrij kunt maken.
+58=Aanbevolen voor de meeste computers
+59=Voor ervaren gebruikers die beschikbare installatieopties willen aanpassen
+60=Opties installatiemethode
+61=Plaats CD #%1% in het CD-ROM-station
+62=WAARSCHUWING! ^Er ontbreken %1% toepassingsbestanden!^De installatie kan niet worden voltooid.^Neem contact op met de Klantenservice.^^De installatie wordt afgebroken...
+64=U hebt ongeldige tekens ingevoerd in de mapnaam.^Alle tekens moeten alfanumeriek zijn: A t/m Z, 1 t/m 9 en/of spaties.^Geef een andere mapnaam op.
+66=Probleem met de CD-ROM: Het bronbestand staat niet op de CD.^%1% ^%2%	
+67=Fout bij kopiëren van bestand.^Het kopiëren van een bestand naar de harde schijf is mislukt.^De installatie wordt afgebroken.^%1%^%2%^"%3%	
+69=De installatie is voltooid.
+70=Help-bestand bekijken
+71=Help-bestand
+72=Voor dit product is een schermresolutie van %1% vereist.^Wijzig de beeldscherminstellingen.^De installatie wordt afgebroken.
+73=Voor dit product is een schermresolutie van %1% vereist.^Wilt u de beeldscherminstelling nu wijzigen?
+74=WAARSCHUWING^^De installatie van DirectX is mislukt. Er is onvoldoende schijfruimte beschikbaar.^Maak ruimte vrij op het Windows-station en voer de installatie nogmaals uit.^De installatie wordt afgebroken.
+75=WAARSCHUWING^^Fout bij de installatie van DirectX. De prestaties kunnen minder zijn.
+76=WAARSCHUWING^^De snelheid van het CD-ROM-station lijkt onvoldoende.^De prestaties kunnen nadelig worden beïnvloed.^De installatie wordt afgebroken.
+77=WAARSCHUWING^^Het lijkt alsof het CD-ROM-station niet snel genoeg is.^De prestaties kunnen nadelig worden beïnvloed.^Wilt u doorgaan?
+78=WAARSCHUWING^^Er is onvoldoende schijfruimte beschikbaar voor installatie op station%1%.^Maak %2% bytes (%3% MB) vrij of selecteer een ander station.
+79=Selecteer de gewenste taal.
+80=U moet een programmagroep opgeven.
+81=WAARSCHUWING^^Ongeldige padselectie. Vaste schijf-locatie kan niet de root-directory of Windows-directory zijn.
+82=Wilt u onze %1% installeren?
+83=Is op uw computer een microfoon aangesloten?
+84=Dit programma is geoptimaliseerd voor %1% kleurweergave of beter. Uw systeem is ingesteld op %2% kleurweergave.^^Als u de grafische kwaliteit van het spel wilt maximaliseren, ^moet u uw weergave-instellingen wijzigen voor betere grafische kwaliteit.^Wilt u de weergave-instellingen nu wijzigen?
+85=Harde-schijruimte wordt gecontroleerd...
+86=WAARSCHUWING! ^^Voor dit installatieprogramma moet de weergave zijn ingesteld op 256 kleuren of beter. ^Uw systeem is momenteel ingesteld op 16 kleuren. U moet de kleurendiepte wijzigen voordat u doorgaat.^^De installatie wordt afgebroken.
+87=WAARSCHUWING!^^Een aantal multimedia-bibliotheekbestanden van Windows ontbreekt op uw systeem.^Deze bestanden zijn noodzakelijk voor een correcte installatie van DirectX.^^Installeer alle bureau-accessoires met behulp van de Setup-diskette van Windows 95/98.^Een upgrade wordt aanbevolen. ^^Wilt u de installatie afsluiten? 
+88=Voer uw e-mailserver in (POP-server).
+89=Taalselectie
+90=Selecteer de taal die moet worden geïnstalleerd.
+91=In welk land woont u? 
+92=WAARSCHUWING! De upgrade kan niet worden uitgevoerd.^^De oorspronkelijke productbestanden ontbreken op uw systeem.^U moet het product opnieuw installeren voordat u doorgaat.^^Het installatieprogramma wordt afgesloten.
+93=Internet-toegang
+94=Wilt u Internet-toegang toestaan vanaf dit product?
+95=Ja, Internet-toegang toestaan.
+96=Nee, Internet-toegang uitschakelen.
+97=Wie is uw Internet-aanbieder?
+88=Mailserver
+99=Voer uw e-mailadres (gebruikersnaam@server.com) en mailserver (POP-server) in.
+100=E-mailadres
+101=WAARSCHUWING! ^Er is een ongeldige naam voor de snelkoppeling gedefinieerd.^Een naam van een snelkoppeling bevat een ongeldig teken.^Het pictogram van de snelkoppeling is niet zichtbaar.
+102=WAARSCHUWING! Het bronbestand staat niet op de cd.^^      Bestand:  %1% ^Bron:  %2%^^Het is raadzaam de installatie af te breken.^Afbreken?
+103=WAARSCHUWING! Een bestand is niet naar de harde schijf gekopieerd.^^      Bestand:   %1%^Bron:  %2%^    Bestemming:  %3%^^Het is raadzaam de installatie af te breken.^Afbreken?
+104=Selecteer een land om verder te kunnen gaan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

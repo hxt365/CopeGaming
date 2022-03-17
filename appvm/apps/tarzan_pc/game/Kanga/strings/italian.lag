@@ -1,0 +1,192 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Installazione
+1=Verifica dei requisiti di sistema in corso. Attendere...
+2=Verifica dei requisiti di memoria in corso...
+3=ATTENZIONE!^^Il sistema dispone solo di %1% MB di RAM.^Questo prodotto richiede %2% MB.^^Continuare?
+4=ATTENZIONE!^^Il sistema dispone solo di %1% MB di RAM.^Questo prodotto richiede %2% MB.^^Installazione annullata.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Verifica dell'hardware in corso...
+6=ATTENZIONE!^Questo prodotto richiede una CPU %1% o superiore. ^^Le prestazioni saranno alterate.
+7=ATTENZIONE!^^Questo prodotto richiede una CPU %1% o superiore.^^Installazione annullata.
+8=ATTENZIONE!^Questo prodotto richiede uno dei seguenti sistemi operativi:^^%1%^^Il sistema in uso è %2%.^^Il prodotto potrebbe non funzionare con questo sistema operativo^Continuare l'installazione?
+9=ATTENZIONE!^Questo prodotto richiede uno dei seguenti sistemi operativi: ^^%1%^^Il sistema in uso è %2%.^^Il prodotto non funziona.^Installazione annullata.
+10=Verifica dell'unità disco in corso... 
+11=ATTENZIONE!^^L'unità selezionata non dispone di spazio sufficiente.^Liberare %1% (%2% MB) o selezionare un'altra unità prima di continuare.
+12=Questo prodotto richiede una risoluzione dello schermo di %1%.
+13=ATTENZIONE! ^^Questo prodotto richiede che lo schermo sia impostato su %2% %3% colori. ^^^Modificare l'impostazione?
+14=Questo prodotto può essere eseguito solo su:
+15=Il sistema in uso è: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Contratto di Licenza
+17=Leggere il seguente Accordo di licenza:
+18=Si accettano i termini dell'Accordo?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Opzioni di installazione
+20=Selezionare una delle opzioni di installazione.
+21=Installazione standard^Raccomandata per ottenere prestazioni ottimali^Requisiti: %1% KB ( %2% MB)
+22=Installazione ridotta^Da utilizzare se lo spazio su disco è limitato^Requisiti: %1% KB (%2% MB)
+23=Installazione personalizzata^Consente di selezionare i componenti da installare
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Scegliere la posizione di destinazione
+25=Questo prodotto sarà installato nella directory seguente:^^Per effettuare l'installazione in questa directory, fare clic su Avanti.^^Per effettuare l'installazione in una directory diversa,^^fare clic su Sfoglia e selezionare la directory desiderata.^^Fare clic su Annulla per uscire dall'installazione.
+26=Specificare il percorso o selezionare la posizione predefinita.
+27=Impossibile scrivere sulla posizione scelta.^Selezionare un'altra posizione.
+28=Sono stati immessi dei caratteri non validi.^Sono validi i caratteri da A a Z, da 1 a 9, i due punti dopo la lettera^dell'unità e il separatore. Immettere un nome di percorso valido.
+29=ATTENZIONE! ^Formato del nome di percorso immesso non valido. Tutti i nomi di percorso devono^avere il formato seguente: <LETTERA UNITÀ DISCO>:\<PERCORSO> ^Esempio: %1%.^Riprovare.
+30=ATTENZIONE!^Nome di cartella immesso troppo lungo. Non superare i %1% caratteri.^Riprovare.
+31=ATTENZIONE!...^^È stata selezionata un'unità non valida.^L'unità disco %1% sembra essere %2%.^Questa unità non può essere utilizzata come destinazione di installazione.^^Selezionare un disco rigido fisso.
+32=Unità floppy o rimovibile
+33=CD-ROM
+34=Confermare la nuova directory
+35=Copia dei file di programma in corso...
+36=Copia del file in corso...%1%
+37=Trasferimento file completato.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Selezione cartella
+39=Delle icone di programma verranno aggiunte alla Cartella programmi^elencata sotto. È possibile digitare un nuovo nome di cartella o selezionarne^uno dall'elenco delle cartelle esistenti. Fare clic su Avanti per continuare.
+40=Creazione directory in corso...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Questo prodotto richiede l'installazione di DirectX.^^Continuare?
+42=ATTENZIONE!! ^^DirectX non è stato installato. ^Questo prodotto potrebbe non funzionare correttamente.
+43=ATTENZIONE!!^^Il sistema non dispone di spazio su disco sufficiente sull'unità: %1%^per installare i file di sistema richiesti per il prodotto.^Tali file sono necessari per il corretto funzionamento del prodotto^e devono essere posizionati sull'unità %1%.^^Liberare uno spazio di %2% su tale unità prima di continuare. Uscita dal programma di installazione.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installazione completata
+45=Congratulazioni!!^L'installazione è stata completata.
+46=È necessario riavviare Windows prima di iniziare.
+47=Sì, riavviare il computer ora.
+48=No, non riavviare il computer ora.
+49=Fare clic su Fine per completare l'installazione.
+50=Sì, visualizzare il file di Guida.
+52=Sì, avviare il prodotto ora.
+54=Selezionare il tipo di installazione desiderata.
+56=Questa opzione riporta alla selezione del percorso.
+57=Questa opzione esce dal programma di installazione e ^consente di liberare spazio su disco.
+58=Raccomandato per la maggior parte dei computer
+59=Per utenti esperti che desiderano personalizzare le opzioni di installazione
+60=Opzioni per il tipo di installazione
+61=Inserire il CD n.%1%
+62=ATTENZIONE! ^File dell'applicazione %1% mancanti!^Impossibile completare correttamente l'installazione.^Contattare il Supporto Clienti^^Installazione interrotta...
+64=Sono stati immessi dei caratteri non validi nel nome della cartella.^I caratteri devono essere alfanumerici, cioè da A a Z, da 1 a 9, e/o spazi. ^Immettere un nome di cartella valido.
+66=Problema con il CD-ROM: il file di origine non esiste sul CD.^%1% ^%2%	
+67=Errore nella copia dei file.^ Un file non è stato copiato sul disco rigido.^ Installazione interrotta.^%1%^%2%^"%3%	
+69=Congratulazioni! Installazione completata.
+70=Rivedi file di Guida
+71=File di Guida
+72=Questo prodotto richiede una risoluzione dello schermo di %1%.^Modificare le impostazioni del sistema.^Installazione interrotta.
+73=Questo prodotto richiede una risoluzione dello schermo di %1%^Si desidera modificare il sistema ora?
+74=ATTENZIONE^^Installazione di DirectX non completata. Spazio su disco insufficiente.^Liberare spazio sull'unità di Windows e ripetere l'installazione^Installazione interrotta.
+75=ATTENZIONE^^Errore nell'installazione di DirectX. Le prestazioni potrebbero essere alterate.
+76=ATTENZIONE^^L'unità CD-ROM non sembra rispondere ai requisiti di questo prodotto.^Le prestazioni potrebbero essere alterate.^Installazione annullata.
+77=ATTENZIONE^^La velocità del CD-ROM sembra essere insufficiente. ^Le prestazioni potrebbero essere alterate.^Si desidera continuare?
+78=ATTENZIONE^^Spazio su disco insufficiente per l'installazione sull'unità %1%^Liberare  %2% byte (%3% MB) o selezionare un'altra unità.
+79=Selezionare la lingua del prodotto
+80=È necessario specificare un gruppo di programmi.
+81=ATTENZIONE^^Percorso non valido. La collocazione del disco rigido non può essere nella directory principale o in quella di Windows.
+82=Si desidera installare %1% ?
+83=È stato collegato un microfono al proprio computer?
+84=Questo programma è stato ottimizzato per essere eseguito con una risoluzione dello schermo di %1% o superiore. Il sistema è impostato su una risoluzione di %2% colori.^^Per ottenere le massime prestazioni, ^modificare le impostazioni dello schermo al fine di ottenere la migliore qualità grafica.^Si desidera modificare la visualizzazione ora?
+85=Verifica dello spazio sul disco rigido in corso...
+86=ATTENZIONE ^^Questo programma di installazione richiede una risoluzione dello schermo di 256 colori o superiore. ^Il sistema è impostato su 16 colori. Cambiare la modalità di visualizzazione prima di continuare.^^Installazione annullata.
+87=ATTENZIONE^^Alcuni file di libreria multimediale di Windows risultano mancanti.^Questi file sono necessari per installare DirectX.^^Installare tutti i componenti multimediali utilizzando il disco di installazione di Windows 95/98.^Si consiglia di eseguire l'aggiornamento. ^^Uscire dall'installazione? 
+88=Immettere il server di posta elettronica (server POP).
+89=Selezione della lingua
+90=Selezionare la lingua che si desidera installare.
+91=In che paese Lei abita?
+92=Avviso: impossibile eseguire l'aggiornamento.^^I file del prodotto non sono presenti nel sistema.^Prima di proseguire, rieseguire l'installazione completa del prodotto.^^Uscita dal programma di installazione in corso.
+93=Accesso Internet
+94=Consentire l'accesso a Internet dal prodotto?
+95=Sì, consentire l'accesso a Internet.
+96=No, disattivare l'accesso a Internet.
+97=Specificare il provider di servizi Internet.
+98=Informazioni posta elettronica
+99=Immettere l'indirizzo di posta elettronica (nomeutente@server.com) e il server di posta elettronica (server POP).
+100= Indirizzo posta elettronica
+101=Avviso: ^nome del collegamento specificato non corretto.^Il nome del collegamento contiene un carattere non valido.^L'icona del collegamento non sarà disponibile.
+102=Avviso: il file di origine non è presente sul CD.^^      File:  %1% ^Origine:  %2%^^Si consiglia di interrompere l'installazione.^Interrompere?
+103=Avviso: copia di un file sul disco rigido non riuscita.^^      File:   %1%^Origine:  %2%^    Destinazione:  %3%^^Si consiglia di interrompere l'installazione.^Interrompere?
+104=Selezionare un paese per continuare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

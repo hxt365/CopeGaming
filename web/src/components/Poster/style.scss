@@ -1,0 +1,17 @@
+.poster {
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  img {
+    background-size: contain;
+    background-position: center;
+    border-radius: 3px;
+    transition: transform 0.2s ease-out;
+  }
+}

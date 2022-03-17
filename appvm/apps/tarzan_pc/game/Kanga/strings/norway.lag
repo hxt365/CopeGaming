@@ -1,0 +1,141 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Installer
+1=Vennligst vent mens vi kontrollerer at systemet oppfyller minimumskravene...
+2=Kontrollerer krav til minne...
+3=ADVARSEL!^^Systemet har bare %1% MB minne.^Dette produktet krever %2% MB.^^Vil du fortsette?
+4=ADVARSEL!^^Systemet har bare %1% MB minne.^Dette produktet krever %2% MB.^^Avbryter installasjonen.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Kontrollerer maskinvaren...
+6=ADVARSEL!^Dette produktet krever en %1%-CPU eller bedre. ^^Ytelsen vil bli påvirket!
+7=ADVARSEL!^^Dette produktet krever en %1%-CPU eller bedre.^^Avbryter installasjonen.
+8=ADVARSEL!^Dette produktet krever ett av følgende operativsystemer:^^%1%^^Dette systemet er %2%.^^Det vil kanskje ikke være mulig å kjøre produktet på dette operativsystemet.^Vil du fortsette installasjonen?
+9=ADVARSEL!^Dette produktet krever ett av følgende operativsystemer: ^^%1%^^Dette systemet er %2%.^^Dette produktet vil ikke kjøre!^Avbryter installasjonen.
+10=Kontrollerer systemdisken... 
+11=ADVARSEL!^^Stasjonen du har valgt, har ikke nok ledig plass.^Frigi %1% (%2% MB) eller velg en annen stasjon før du fortsetter.
+12=Dette produktet krever en skjermoppløsning på %1%.
+13=ADVARSEL! ^^Dette produktet krever at skjermen kan defineres til %2% %3% farger. ^^^Vil du endre innstillingene nå?
+14=Dette produktet kjører bare på:
+15=Dette systemet er: 
+
+;;------------------------
+;;LICENSE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Lisensavtale
+17=Vennligst les følgende lisensavtale:
+18=Godtar du disse vilkårene?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installasjonsvalg
+20=Velg en av installasjonstypene.
+21=Standard installasjon^Anbefales for å få best mulig ytelse.^Krever: %1% kB ( %2% MB)
+22=Kompakt^Best når diskplassen er begrenset.^Krever: %1% kB (%2% MB)
+23=Tilpasset^Tillater selektiv installasjon av komponenter.
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Velg plassering
+25=Installasjonsprogrammet vil installere produktet i denne katalogen:^^Velg Neste for å installere i denne katalogen.^^Hvis du vil installere i en annen katalog, velger du Bla gjennom og velger en annen katalog.^^Velg Avbryt hvis du vil avslutte installasjonen.
+26=Angi bane eller velg standardbanen.
+27=Installasjonsprogrammet kan ikke skrive til katalogen du har valgt.^Velg en annen plassering.
+28=Du har angitt ett eller flere ugyldige tegn.^Gyldige tegn er A til Z, 1 til 9, et kolon etter stasjonsbokstaven og omvendt skråstrek. Angi en gyldig bane.
+29=ADVARSEL! ^Den angitte banen har ugyldig format. Alle baner krever^dette formatet: <DISK-STASJONSBOKSTAV>:\<BANE> ^For eksempel slik: %1%.^Prøv på nytt.
+30=ADVARSEL!^Det angitte mappenavnet er for langt. Mappenavn er begrenset til %1% tegn.^Prøv på nytt.
+31=ADVARSEL!...^^Ugyldig stasjonsvalg.^Stasjonen %1% ser ut til å være en %2%.^Det er ikke mulig å installere på denne stasjonen.^^Velg en harddiskstasjon.
+32=diskettstasjon eller flyttbar stasjon
+33=CD-ROM-stasjon
+34=Bekreft ny katalog
+35=Kopierer programfiler...
+36=Kopierer filen ...%1%
+37=Filoverføring er fullført.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Velg mappe
+39=Installasjonsprogrammet vil legge til programikoner i programmappen som er angitt nedenfor.^Du kan skrive et nytt mappenavn eller velge et navn fra^listen over eksisterende mapper. Velg Neste for å fortsette.
+40=Oppretter katalogen ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=Dette produktet krever installasjon av DirectX.^^Vil du fortsette?
+42=ADVARSEL!! ^^DirectX er ikke installert. ^Dette produktet vil kanskje ikke fungere på riktig måte.
+43=ADVARSEL!!^^Systemet har ikke nok diskplass på stasjon %1%^til å installere systemfilene som dette produktet krever. Disse filene er nødvendige for at produktet skal fungere riktig, og må plasseres på %1%-stasjonen.^^Frigi %2% byte på denne stasjonen før du fortsetter. Avslutter installasjonen.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Installasjonen er fullført
+45=Gratulerer!!^Installasjonen er fullført.
+46=Du må starte Windows på nytt før du kan begynne.
+47=Ja, jeg vil starte datamaskinen på nytt nå.
+48=Nei, jeg vil starte datamaskinen på nytt senere.
+49=Velg Fullfør for å fullføre installasjonen.
+50=Ja, jeg vil se gjennom hjelpefilen.
+52=Ja, jeg vil starte produktet nå.
+54=Velg den installasjonstypen du ønsker.
+56=Dette valget vil ta deg tilbake til banevalget.
+57=Dette valget vil avslutte installasjonsprogrammet og ^gjøre det mulig å frigi diskplass.
+58=Anbefales for de fleste datamaskiner
+59=For avanserte brukere som ønsker å tilpasse alle tilgjengelige installasjonsvalg
+60=Valg av installasjonstype
+61=Sett inn CD nr. %1%
+62=ADVARSEL! ^ %1% programfiler mangler!^Installasjonsprogrammet kan ikke fullføre installasjonen.^Ta kontakt med kundestøtte.^^Avbryter installasjonen...
+64=Du har angitt ugyldige tegn i mappenavnet.^Alle tegn må være alfanumeriske, det vil si A til Z, 1 til 9 og/eller mellomrom. ^Angi et annet mappenavn.
+66=Problemer med CD-ROM: Kildefilen finnes ikke på CDen.^%1% ^%2%	
+67=Feil under kopiering av fil.^En fil er ikke kopiert til harddisken.^Avbryter installasjonen.^%1%^%2%^"%3%	
+69=Gratulerer! Du har fullført installasjonen.
+70=Se gjennom hjelpefilen
+71=Hjelpefil
+72=Dette produktet krever en skjermoppløsning på %1%.^Du bør endre systeminnstillingene.^Avbryter installasjonen.
+73=Dette produktet krever en skjermoppløsning på %1%^Vil du endre systemet nå?
+74=ADVARSEL!^^DirectX er ikke riktig installert. For lite diskplass.^Frigi plass på Windows-stasjonen og installer på nytt.^Avbryter installasjonen.
+75=ADVARSEL!^^Feil under installasjon av DirectX. Ytelsen kan være påvirket.
+76=ADVARSEL!^^CD-ROM-stasjonen oppfyller trolig ikke kravene for dette produktet.^Ytelsen kan bli påvirket.^Avbryter installasjonen.
+77=ADVARSEL!^^CD-ROM-stasjonen er trolig ikke hurtig nok. ^Ytelsen kan bli påvirket.^Vil du fortsette?
+78=ADVARSEL!^^Du har ikke nok diskplass til å installere på stasjon %1%^Frigi %2% byte (%3% MB) eller velg en annen stasjon.
+79=Velg produktspråk
+80=En programgruppe må angis.
+81=ADVARSEL^^ Ugyldig banevalg. Harddiskplassering kan ikke være i rotkatalogen eller Windows-katalogen.
+82=Vil du installere %1%?
+83=Er det koblet en mikrofon til maskinen?
+84=Dette programmet ble optimalisert for å kjøre i %1% fargegrafikk eller bedre. Det ser ut til at maskinen er innstilt på %2% farger.^^Hvis du vil maksimere den grafiske kvaliteten på spillet, ^kan du endre skjerminnstillingene.^Vil du endre skjerminnstillingene nå?
+85=Kontrollerer plass på harddisken...
+86=ADVARSEL! ^^Dette installeringsprogrammet krever at skjermen er innstilt på 256 farger eller bedre. ^Maskinen er for øyeblikket innstilt på 16 farger. Endre fargedybden før du fortsetter.^^Avslutt installeringen.
+87=ADVARSEL!^^Maskinen mangler noen bibliotekfiler for Windows-multimedia.^Disse filene kreves for installering av DirectX.^^Installer alle multimediekomponentene fra installerings-CDen for Windows 95/98.^Oppgradering anbefales på det sterkeste. ^^Avslutte installeringen?
+88=Postserver
+89=Valg av språk
+90=Velg språket du vil installere.
+91=Hvilke land å du være bosatt inne?
+92=ADVARSEL! Oppgraderingen kan ikke utføres.^^Det virker som om systemet mangler de originale produktfilene.^Installer det fullstendige produktet på nytt før du fortsetter.^^Avslutter installeringen.
+93=Internett-tilgang
+94=Vil du tillate Internett-tilgang fra dette produktet?
+95=Ja, tillat Internett-tilgang.
+96=Nei, ikke bruk Internett-tilgang.
+97=Hvem er din Internett-leverandør?
+98=E-postinformasjon
+99=Oppgi e-postadresse (brukernavn@server.com) og postserver(POP-server)
+100=E-postadresse
+101=ADVARSEL! ^Ugyldig navn på hurtigtast.^Et hurtigtastnavn inneholder et ugyldig tegn.^Hurtigtastikonet blir ikke vist.
+102=ADVARSEL! Kildefilen finnes ikke på CDen.^^      Fil:  %1% ^Kilde:  %2%^^Det anbefales på det sterkeste at installeringen avsluttes.^Vil du avslutte?
+103=ADVARSEL! En fil kunne ikke kopieres til harddisken.^^      Fil:   %1%^Kilde:  %2%^    Mål:  %3%^^Det anbefales på det sterkeste at installeringen avsluttes.^Vil du avslutte?	
+104=Du må velge en land å fortsette.

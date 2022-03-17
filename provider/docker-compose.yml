@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  appvm:
+    build:
+      context: ../appvm
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: ${APP_NAME}
+    restart: on-failure
+    environment:
+      - videoport=${VIDEO_PORT}
+      - audioport=${AUDIO_PORT}
+      - wsport=${WS_PORT}
+    env_file:
+      - ./appconf/${APP_NAME}.env
+    volumes:
+      - ../appvm/app/${APP_NAME}:/appvm/app

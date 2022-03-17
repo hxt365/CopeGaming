@@ -1,0 +1,180 @@
+;;  %1% are insert parameters  where %1% = parameter 1  
+;;				     %2% = parameter 2 
+;;                                   %3% = parameter 3
+;;
+;;  Only 3 parameters maximum
+;;
+;; New lines (CARRIAGE RETURNS) are indicated by ^
+;;
+;; New strings CAN NOT BE ADDED WITHOUT CODING CHANGE.  
+;; These strings are provided here for easy adaptation of presently defined strings.
+;;
+;;
+[CUSTOM STRINGS]
+0=_Setup
+1=Please wait while we verify that your system meets the minimum requirements...
+2=Checking memory requirements...
+3=WARNING !^^Your system has only %1% MB of RAM.^This product requires %2% MB.^^Do you wish to continue?
+4=WARNING !^^Your system has only %1% MB of RAM.^This product requires %2% MB.^^Cancelling Setup.
+
+;;---------------------------
+;;CHECKING HARDWARE MESSAGES
+;;----------------------------
+5=Checking hardware...
+6=WARNING !^This product requires a %1% CPU or better. ^^Performance will be affected !
+7=WARNING !^^This product requires a %1% CPU or better.^^Cancelling Setup.
+8=WARNING !^This product requires one of the following Operating Systems:^^%1%^^Your system is %2%.^^This product may not run on this operating system^Continue with setup ?
+9=WARNING !^This product requires one of the following Operating Systems: ^^%1%^^Your system is %2%.^^This product will not run!^Cancelling Setup.
+10=Checking system disk drive... 
+11=WARNING !^^The drive you have selected does not have enough free space.^Please free up %1% (%2% MB) or select another drive before continuing.
+12=This product requires a screen resolution of %1%.
+13=WARNING ! ^^This product requires that your display be set to %2% %3% colour. ^^^Would you like to change your settings now?
+14=This product only runs on :
+15=Your system is a : 
+
+;;------------------------
+;;LICENCE AGREEMENT DIALOGUE BOX
+;;--------------------------
+16=Licence Agreement
+17=Please read the following licence agreement :
+18=Do you accept these terms ?
+
+;;---------------------
+;;INSTALLATION OPTIONS
+;;--------------------
+19=Installation Options
+20=Please select one of the installation options.
+21=Standard Install^Recommended for best performance^Requires: %1% KB ( %2% MB)
+22=Space Saver^Best used when disk space is limited^Requires: %1% KB (%2% MB)
+23=Custom^Allows for selective installation of components
+
+;;--------	
+;;CHOOSE DESTINATION LOCATION
+;;------------
+24=Choose Destination Location
+25=Setup will install this product in the following directory :^^To install in this directory, click Next.^^To install in a different directory, click Browse and select another directory.^^Click Cancel to exit the installation.
+26=Please enter the path or select the default.
+27=Install is unable to write to the location you have selected.^Please select another location.
+28=You have entered an invalid character(s).^Valid characters are A to Z, 1 to 9, a colon after the drive letter, and back slash. Please enter a valid path name.
+29=WARNING! ^Entered path name has an invalid format.  All path names require^the following format: <DISK DRIVE LETTER>:\<PATH NAME> ^For example: %1%.^Please try again.
+30=WARNING !^Entered folder name is too long.  Folder names are limited to: %1% characters.^Please try again.
+31=WARNING!...^^Invalid drive selection.^Disk Drive %1% appears to be a %2%.^This drive can not be used as an installation destination.^^Please select a fixed Hard Drive.
+32=Floppy or Removable Drive
+33=CD-ROM
+34=Confirm New Directory
+35=Copying program files...
+36=Copying file ...%1%
+37=File transfer complete.
+
+;;------------------
+;;FOLDER SELECTION
+;;----------------
+38=Folder Selection
+39=Setup will add program icons to the Program Folder listed below.^You may type a new folder name, or select one from the Existing^Folders list. Click Next to continue.
+40=Creating Directory ...%1%
+
+;;-------------------
+;;DIRECTX INSTALLATION
+;;--------------------
+41=This product requires installation of DirectX.^^Continue ?
+42=WARNING !! ^^DirectX has not been installed. ^This product may not function properly.
+43=WARNING !!^^Your system does not have enough disk space on drive: %1%^to install system files required by this product. These files are required for the proper execution of this product and must be placed on your %1% drive.^^Please free up %2% bytes of space on this drive before continuing.  Exiting install.
+
+
+;;---------------
+;;SETUP COMPLETE
+;;---------------
+44=Setup Complete
+45=Congratulations !!^Installation has been completed successfully.
+46=You must restart Windows before you can begin.
+47=Yes, I want to restart my computer now.
+48=No, I will restart my computer later.
+49=Click Finish to complete the installation.
+50=Yes, I want to view the Help File.
+52=Yes, I want to launch the product now.
+54=Please select the type of installation you desire.
+56=This option will return you to the path selection.
+57=This option will exit the installer and ^allow you to free up disk space.
+58=Recommended for most computers
+59=For advanced users who wish to customise all available setup options
+60=Installation Type Options
+61=Please insert CD #%1%
+62=WARNING ! ^ %1% application files are missing!^Setup is unable to accurately complete your install.^Please call Customer Support^^Aborting install...
+64=You have entered some invalid characters in your folder name.^All characters must be alphanumerics ie: A to Z, 1 to 9 and/or spaces. ^Please enter another folder name.
+66=Problem with CDROM: Source file does not exist on CD.^%1% ^%2%	
+67=File Copy failure.^ A file has failed to copy onto your hard drive.^ Aborting install.^%1%^%2%^"%3%	
+69=Congratulations!  You have completed your setup.
+70=Review Help File
+71=Help File
+72=This product requires a screen resolution of %1%.^Please change your systems settings.^Aborting Install.
+73=This product requires a screen resolution of %1%^Would you like to change your system now ?
+74=WARNING^^DirectX has failed to install. Out of disk space.^Please free up space on your Windows drive and install again^Aborting install.
+75=WARNING^^DirectX installation error. Performance may be hindered.
+76=WARNING^^Your CDROM drive does not appear to meet the requirements of this product.^Performance may be affected.^Cancelling Setup.
+77=WARNING^^Your CDROM does not appear to be fast enough. ^Performance may be affected.^Would you like to continue ?
+78=WARNING^^You do not have enough disk space to install on drive %1%^Please free up %2% bytes (%3% MB) or select a different drive.
+79=Please select the product language
+80=A Program Group must be specified.
+81=WARNING^^Invalid path selection.  Hard drive location must can not reside in the root directory or Window directory.
+82=Would you like to install our %1% ?
+83=Does your computer have a microphone attached to it?
+84=This program was optimized to run in %1% colour graphics or better. Your system appears to be set to %2% colour.^^To maximize the graphic quality of your game, ^please change your display settings for better graphic quality.^Would you like to change your display now?
+85=Verifying hard drive space...
+86=WARNING ! ^^This installer requires that your display be set to 256 colours or better. ^Your system is currently set to 16 colours. Please change your colour depth before continuing.^^Aborting install.
+87=WARNING!^^Your system is missing some Windows multimedia library files.^These files are required for a successfull DirectX install.^^Using your Windows 95/98 setup disk, please install all of the Multimedia accessories.^Upgrade is strongly recommended. ^^Exit install? 
+88=Mail Server
+
+;; EULA language.
+89=Language Selection
+;; EULA Language
+90=Please select the language you would like installed.
+;; EULA Language
+91=Which country do you reside in?
+92=WARNING !  Upgrade can not be performed.^^Your system appear to be missing the orginal product files.^Please reinstall full product before continuing.^^Exiting installer.
+93=Internet Access
+94=Would you like to allow Internet access from this product?
+95=Yes, allow Internet access.
+96=No, disable Internet access.
+97=Who is your Internet Service Provider?
+98=Email Information
+99=Please enter your email address (username@server.com)         and Mail Server (POP server)
+100=E Address
+101=WARNING! ^Invalid shortcut name defined.^A shortcut name contains an invalid character.^Shortcut icon will not be visible.  
+102=WARNING! Source file does not exist on CD.^^      File:  %1% ^Source:  %2%^^Aborting installation is strongly recommended.^Abort?	
+103=WARNING! A file has failed to copy onto your hard drive.^^      File:   %1%^Source:  %2%^    Dest:  %3%^^Aborting installation is strongly recommended.^Abort?	
+104=You must select a country to continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

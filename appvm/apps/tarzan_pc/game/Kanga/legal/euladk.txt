@@ -1,0 +1,221 @@
+               BRUGERLICENSAFTALE
+DENNE LICENS BØR GENNEMLÆSES NØJE FØR SOFTWAREN 
+TAGES I BRUG.  
+
+Ved brug af denne software accepterer du 
+(herefter refereret til som licenshaver) 
+at være bundet af samtlige vilkår, der 
+gælder for denne licens. Hvis licenshaver, 
+som er køber og primær bruger, ikke accepterer 
+vilkårene for licensen, skal den uinstallerede 
+software samt al emballage straks returneres, 
+mod fuld refusion af købesummen.
+
+
+LICENS.
+
+Som modydelse for betaling af licensafgiften, 
+som udgør en del af den pris, der er betalt 
+for softwaren, giver Disney Interactive, Inc. 
+("Disney") herved licens til (men sælger 
+ikke) softwaren, herunder de i softwaren 
+indbyggede eller af softwaren dannede motiver 
+ssamt på de med denne licens følgende data 
+("Softwaren") og tilhørende dokumentation. 
+Disney overdrager ikke herved nogen ejendomsret 
+til Softwaren; licensen er ikke at betragte 
+som et "salg" af Softwaren. CD-ROM'en, hvorpå 
+Softwaren er lagret, er til ejendom, men Disney 
+bevarer fuldt og helt ejendomsretten 
+til CD-ROM'ens Software, den medfølgende 
+dokumentation og alle de deri indeholdte 
+immaterielle rettigheder og industrielle 
+enerettigheder. Nærværende simple og 
+personlige licens berettiger til brug og 
+opstilling af dette eksemplar af Softwaren. 
+
+
+BEGRÆNSNINGER.
+
+Softwaren indeholder materiale, der er 
+genstand for ophavsret, forretningshemmeligheder 
+samt andet ejendomsretsligt materiale. Det er 
+ikke tilladt at foretage dekompilering, reverse 
+engineering ("baglæns udvikling"), 
+disassemblering eller anden reduktion af 
+Softwaren til menneskelig forståelig form. 
+Bortset fra de i licensen indeholdte bestemmelser 
+herom, er det ikke tilladt at kopiere, modificere, 
+lægge ud på netværk, udleje, bortlease 
+eller på anden måde distribuere Softwaren; det 
+er heller ikke tilladt at stille Softwaren til 
+rådighed via bulletin boards ("elektronisk 
+opslagstavle"), for on-line betjening, på 
+Internettet, remote dial-in ("ekstern opkobling") 
+eller netværks- eller telekommunikationslinjer af 
+nogen art; det er heller ikke tilladt at frembringe 
+afledte produkter, der helt eller delvist er 
+baseret på Softwaren. Inden for rammerne af de 
+for nærværende licensaftale gældende vilkår 
+er det tilladt at overdrage alle licensrettighederne 
+til Softwaren til en anden part, forudsat at den 
+originale CD-ROM indeholdende Softwaren, den 
+tilhørende dokumentation, al information vedrørende 
+ophavsret samt kopi af licensen overdrages til den 
+pågældende, og forudsat at denne læser og indvilger 
+i at acceptere vilkårene og betingelserne for 
+licensen. Hvis Softwaren overdrages, skal Softwaren 
+fjernes fra harddisken, og det er ikke tilladt at 
+beholde kopier af Softwaren til eget brug. Denne 
+Software er udelukkende til PERSONLIG brug og må 
+ikke bruges i ERHVERVSMÆSSIGE eller STATSLIGE 
+henseender.
+     
+YDERLIGERE BEGRÆNSNINGER I BRUGEN AF SOFTWAREN MED 
+UDSKRIVNINGSFUNKTIONER.
+
+Hvis denne Software giver mulighed for at udskrive 
+motiver af de figurer, Disney har ophavsret til, 
+tillader nærværende licens alene udskrivning af 
+motiver på papir, som udskrevet af din computers 
+printer, til PERSONLIGT, IKKE-ERHVERVSMÆSSIGT og 
+IKKE-STATSLIGT brug, forudsat at al information 
+vedrørende ophavsret, der er inkluderet i motiverne, 
+bibeholdes som de dannes af Softwaren. Dette 
+betyder, at det f.eks. er tilladt at bruge Softwaren 
+til udskrivning af invitationer til private 
+sammenkomster. Det er f.eks. ikke tilladt at 
+udskrive invitationer til begivenheder sponsoreret 
+af virksomheder, velgørende institutioner, kirker 
+eller uddannelsesinstitutioner. Det er ikke 
+tilladt at bruge motiver genereret af Softwaren i 
+forbindelse med reklamemateriale af nogen slags, 
+hverken i erhvervsmæssig henseende eller anden 
+henseende. Brug af motiver dannet ved hjælp af 
+Softwaren til ethvert formål, som denne licens 
+ikke eksplicit giver tilladelse til er en krænkelse 
+af Disney's ophavsret og øvrige ejendomsretslige 
+rettigheder og vil føre til øjeblikkelig opsigelse 
+af licensen. 
+
+OPSIGELSE.
+
+Nærværende licens forbliver i kraft, indtil den 
+opsiges af en af parterne. Licensen kan til enhver 
+tid opsiges ved at returnere Softwaren til Disney 
+eller ved at destruere Softwaren og al tilhørende 
+dokumentation samt alle kopier og installationer 
+heraf, uanset om disse er udført i henhold til 
+vilkårene for licensen eller på anden måde. 
+Licensen ophører øjeblikkeligt og uden varsel fra 
+Disney's side ved manglende opfyldelse af enhver 
+af bestemmelserne heri. Efter ophør skal Softwaren 
+og tilhørende dokumentation samt alle kopier heraf 
+enten destrueres eller returneres til Disney, 
+uanset om disse er udført i henhold til vilkårene 
+for licensen eller på anden måde.
+
+BEGRÆNSET GARANTI OG ANSVARSFRASKRIVELSE.
+
+DISNEY GARANTERER, AT CD-ROM'EN, HVORPÅ SOFTWAREN 
+ER LAGRET, VIL VÆRE FRI FOR MATERIALE OG 
+HÅNDVÆRKSMÆSSIGE FEJL VED NORMAL BRUG I EN 
+PERIODE PÅ HALVFEMS (90) DAGE FRA KØBSDATOEN, 
+DER FREMGÅR PÅ KOPI AF KØBSNOTA ELLER FØLGESEDDEL. 
+DISNEY'S TOTALE ERSTATNINGSANSVAR OG LICENSHAVERS 
+ENESTE BEFØJELSER VIL VÆRE UDSKIFTNING AF DEFEKT(E) 
+CD ROM'ER ELLER REFUNDERING AF KØBSPRISEN (EFTER 
+DISNEY'S VALG), NÅR SOFTWAREN ER RETURNERET TIL 
+DISNEY MED KOPI AF KØBSBEVIS. UNDTAGEN HVIS 
+SOFTWAREN ER UNDERLAGT EN BESTEMT GARANTI ELLER 
+SUPPORT SERVICE, SOM REFERERET TIL I BETINGELSERNE 
+VEDRØRENDE DISTRIBUTION OG/ELLER PRODUCENTEN 
+OG/ELLER DISTRIBUTØREN AF PRODUKTET, MED HVILKEN 
+SOFTWAREN ER FORBUNDET. DISNEY ER IKKE PLIGTIG 
+TIL AT ERSTATTE CD ROM'ER, DER ØDELÆGGES VED 
+UDEFRA KOMMENDE SKADE SAMT BEVIDST ELLER UBEVIDST 
+FORKERT BRUG. ALLE STILTIENDE GARANTIER OG/ELLER 
+BESTEMMELSER PÅ CD ROM'EN, HERUNDER STILTIENDE 
+GARANTIER OG/ELLER BESTEMMELSER OM AT DENNE ER 
+KURANT ELLER EGNET TIL SÆRLIGE FORMÅL, ER BEGRÆNSET 
+I VARIGHED TIL HALVFEMS (90) DAGE FRA KØBS- ELLER 
+LEVERINGSDATO.
+
+DENNE GARANTI GIVER SÆRLIGE JURIDISKE RETTIGHEDER, 
+HVORTIL KOMMER EVENTUELLE ØVRIGE RETTIGHEDER, DER 
+KAN VARIERE FRA ET RETSSYSTEM TIL ET ANDET. DET 
+ANERKENDES OG ACCEPTERES HERVED UDTRYKKELIGT, AT 
+BRUG AF SOFTWAREN SKER FOR EGEN RISIKO. SOFTWAREN 
+OG TILHØRENDE DOKUMENTATION LEVERES I DEN STAND, 
+DETTE ER OG FOREFINDES, OG UDEN GARANTI OG/ELLER 
+BESTEMMELSER AF NOGEN ART, HVERKEN UDTRYKKELIGE 
+ELLER STILTIENDE. DISNEY FRASIGER SIG UDTRYKKELIGT 
+ENHVER GARANTI OG/ELLER BESTEMMELSE, UDTRYKKELIG 
+SÅVEL SOM STILTIENDE, FOR SÅ VIDT ANGÅR SOFTWAREN 
+OG TILHØRENDE DOKUMENTATION, HERUNDER - MEN IKKE 
+BEGRÆNSET TIL - STILTIENDE GARANTIER OG/ELLER 
+BESTEMMELSER OM AT SOFTWAREN ER KURANT ELLER EGNET 
+TIL SÆRLIGE FORMÅL. DISNEY YDER INGEN GARANTI FOR, 
+AT SOFTWAREN VIL FUNGERE UDEN AFBRYDELSE ELLER FEJL 
+ELLER FOR AFHJÆLPNING AF FEJL I SOFTWAREN. ENDVIDERE 
+YDES INGEN GARANTI FOR ELLER GIVES OPLYSNING OM 
+BRUGEN ELLER RESULTATET AF BRUGEN AF SOFTWAREN 
+OG TILHØRENDE DOKUMENTATION I HENSEENDE TIL 
+KORREKTHED, NØJAGTIGHED, PÅLIDELIGHED M.V. DEN I 
+DETTE AFSNIT BESKREVNE ANSVARSBEGRÆNSNING GÆLDER 
+LIGELEDES FOR UNDERLEVERANDØRER AF MATERIALER 
+ANVENDT I SOFTWAREN. MUNDTLIGE ELLER SKRIFTLIGE 
+OPLYSNINGER ELLER RÅDGIVNING FRA DISNEY ELLER EN 
+DISNEY BEFULDMÆGTIGET REPRÆSENTANTS SIDE STIFTER 
+INGEN FORM FOR GARANTI OG/ELLER BESTEMMELSE ELLER 
+ØGER PÅ NOGEN MÅDE OMFANGET AF DENNE BEGRÆNSEDE 
+GARANTI. LICENSHAVER (OG IKKE DISNEY) DÆKKER 
+SAMTLIGE OMKOSTNINGER FORBUNDET MED AL 
+NØDVENDIG SERVICE, REPARATION ELLER AFHJÆLPNING. 
+VISSE RETSSYSTEMER TILLADER IKKE UDELUKKELSE AF 
+STILTIENDE GARANTIER, HVORFOR OVENNÆVNTE 
+MULIGVIS IKKE ER GÆLDENDE I DETTE TILFÆLDE.
+
+BEGRÆNSNINGER I ANSVARET.
+
+I intet tilfælde, herunder uagtsomhed, dækker 
+Disney's erstatningsansvar særlige tab eller 
+følgetab, som skyldes brugen af eller manglende 
+brugbarhed af softwaren eller tilhørende 
+dokumentation, uanset om Disney eller en Disney 
+befuldmægtiget repræsentant er blevet informeret 
+om risikoen for sådan erstatning. Visse 
+retssystemer tillader ikke begrænsning eller 
+frasigelse af ansvar eller erstatning for 
+særlige tab eller følgetab, hvorfor ovennævnte 
+begrænsning eller frasigelse muligvis ikke 
+gælder i dette tilfælde. Disney's samlede 
+ansvar for enhver type erstatning, tab og 
+søgsmålsgrundlag (baseret på kontrakt, uden 
+for kontrakt (herunder uagtsomhed) eller 
+andet) kan aldrig overstige det beløb, der 
+er betalt for Softwaren. 
+
+LOVVALG OG VILKÅRENES UAFHÆNGIGHED.
+
+Nærværende licens reguleres og fortolkes i 
+overensstemmelse med lov i det land, hvor 
+licensholder er bosiddende, hvis dette land 
+er indenfor EU. Hvis licensholder er bosiddende 
+udenfor EU, skal gældende lov være staten 
+Californiens, uden at give anledning til 
+lovkonflikter. Hvis en bestemmelse i denne 
+licens er retsstridig, ugyldig eller på 
+anden måde ikke kan håndhæves, skal den 
+pågældende bestemmelse udskilles fra licensen 
+og påvirker ikke øvrige bestemmelsers 
+gyldighed eller retskraft. Dette udgør hele 
+aftalen mellem parterne vedrørende det heri 
+omhandlede emne, og aftalen kan kun ændres 
+skriftligt og ved begge parters underskrift.
+
+
+Brugerlicensaftale
+9/15/98
+
+

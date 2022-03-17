@@ -1,0 +1,128 @@
+[AUTOPLAY STRINGS]
+Play=Play
+Exit=Exit
+Install=Install Now
+Reinstall=Reinstall
+Uninstall=Uninstall
+Register=Register
+Internet=Web Site
+Demo=Demos
+Optional=Optional
+Return=Return to Main Menu
+URL=disney.go.com
+Dial=Connect
+DialInstructions=Please enter password
+Cancel=Cancel
+No=No
+Yes=Yes
+OK=OK
+Config=Configuration
+
+AcceptTerms=Accept Terms
+LaunchBrowser=Launch Browser
+ManualNoConnect=NO CONNECTION FOUND!^Please make sure that you have manually connected to the internet before clicking on: Launch Browser. ^^Would You like to try again?
+
+PlayToolTip=Play Tarzan Action Game
+ExitToolTip=Return to the desktop
+InstallToolTip=Installs Tarzan Action Game
+ReinstallToolTip=This is the reinstall tool tip
+UninstallToolTip=Remove Tarzan Action Game
+RegisterToolTip=Register Tarzan Action Game
+InternetToolTip=Disney's Online Catalog
+OptionalToolTip=Optional ToolTip
+DemoToolTip=Other Demos
+ConfigToolTip=Configuration ToolTip
+
+
+UserMsgLooking=Looking for internet connection....
+CheckingForAOL=Looking for AOL.....
+CheckingForCompuServ=Looking for CompuServ
+ConnectionFound=Connection found.  Launching browser....
+
+
+UninstallMsg=Warning...You are about to remove this product.  Proceed?
+ReinstallMsg=Warning... You are about to overwrite your game. Saved games may be deleted. Proceed?
+ConnectMsg=Unable to automatically connect to the Internet.^Would you like instruction on how to connect manually?
+ConnectHdr=Internet Access
+AVIErrorHdr=AVI Problem
+AVIFailureMessage=Unable to play AVI file. 
+NoRemoteConnection=No remote access connection found. Please log-onto the internet before continuing.
+NoModem=We are unable to find a modem or other connection device.^Perhaps you modem is not turned on.^^Would you like instructions on how to connect manually?
+PasswordMsg=Please enter a password before continuing.
+UserLoginMsg=Please enter a Login Name before continuing.
+UserName=User Name:
+Password=Password:
+PasswordTitle=
+ProblemWithConnect=Unable to connect.  Please check your password or User ID and try again.
+CloseBrowserMsg=Would you like to close your browser?
+GenInternetMsgHeader=Internet
+NoBrowser=Unable to find Internet Browser.
+LibFailure=System Libraries unavailable.  
+NoDialUpEntries=We are unable to find a dial-up entry.^Would you like instructions on how to connect manually?
+UserAborted=User aborted internet access
+MinColorsMsg=Please set your system to display at least 256 colors.
+
+;;--------- Dialer connection messages -----------------
+
+Connect_Initalize=Initalizing ..........
+Connect_openport=Initalizing port ....
+Connect_device=Connecting Device........
+Connect_DeviceConnected=Device Connected
+Connect_AllConnected=All Devices Connected
+Connect_StartAuthentication=Verifying name and password...
+Connect_AuthenticationNoftify=Authentication Notify
+Connect_AuthenticationRetry=Reverifying password ...
+Connect_CallbackRequested=Callback Requested
+Connect_NewPasswordRequested=Change Password Requested
+Connect_ProjectionStarted=Projection Phase Started
+Connect_SpeedCalculation=Calculation connection speed
+Connect_Authentication_ACK=Authentication Acknowledged
+Connect_ReAuthentication=Reauthenticatation Started
+Connect_AutenticationConfirmed=Logging onto the network.....
+Connect_PreparingForCallBack=Preparation For Callback
+Connect_ModemReset=Waiting for modem
+Connect_WaitingForCallback=Waiting For Callback
+Connect_Interactive=Interactive
+Connect_RetryAuthentication=Retry Authentication
+Connect_CallbackSet=Callback Set By Caller
+Connect_PasswordExpired=Your Password has Expired.  Disconnecting.
+Connect_Complete=Congratulations!  You are now connected to the Internet.  Launching browser..
+Connect_UnknownProblem=Connection problem.  Please try again
+Connect_CallbackComplete=Call Back complete
+Connect_LogginOntoNetwork=Logging onto the network....please wait.
+Connect_CkUserName=Checking user name and password...
+
+
+ServerDisconnect=The server has disconnected you.
+HardwareFailure=Modem Failure.
+ModemError=Modem Error
+
+UnknownError=Unknown Server error
+Timeout=Server has timed out
+ServerProblem=Server has aborted operation
+ServerProhit=The server has prohibted you from logging in.  Usually this is due to limited hours.
+AccountDisabled=You account has been disabled.
+AccountExpired=Your account has expired.
+
+ServerNotResponding=The server is not responding
+LineBusy=The phone line is busy.  Please try again at a later time.
+VoiceAnswer=Wrong Number
+NoAnswer=The phone line you have dialed is not answering.
+NoCarrier=Unable to contact server.
+NoDialTone=No phone line detected.
+AuthenticationFailure=Unable to verify user name and/or password
+RasError=Problem with Dial-up Networking.
+PortError=Modem port in use.
+MissingModem=Unable to find attached modem.
+NoIPAddress=Unable to find URL
+NonCompliantPort=Port can not be used for dial-up networking
+ModemNotResponding=Your modem is not responding.  Is it turn on?
+ProblemWithPhoneLine=Phone line connection is unstable.  Please log-off and try again.
+InvalidPhoneNumber=Phone number is invalid.
+
+
+
+//////////---------- Additional messages --------------///
+AOLPermission=Unable to automatically connect to the internet. However, AOL has been detected on your system.  Would you like to launch AOL now ?
+CompuServePermission=It appears that you have CompuServ installed on your system.  Would you like to launch it now ?
+ManualURLInstructions=After you have manually connected to the internet, please type in URL: 
