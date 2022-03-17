@@ -4,5 +4,21 @@
   &__title {
     text-align: center;
     color: #b81d24;
+    margin-bottom: 3rem;
+  }
+
+  &__close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+    color: #b81d24;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: #e50914;
+    }
   }
 }

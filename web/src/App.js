@@ -203,11 +203,17 @@ function App() {
     setVideoStream(null);
     setInpChannel(null);
     setSelectedApp("");
+    setSelectedProvider("");
   };
 
   const selectProvider = (providerId) => {
     setSelectedProvider(providerId);
     startApp();
+  };
+
+  const reselectApp = () => {
+    setSelectedApp("");
+    setSelectedProvider("");
   };
 
   return (
@@ -220,7 +226,10 @@ function App() {
           onCloseApp={closeApp}
         />
       ) : selectedApp !== "" ? (
-        <ProviderChoice onSelectProvider={selectProvider} />
+        <ProviderChoice
+          onSelectProvider={selectProvider}
+          onBack={reselectApp}
+        />
       ) : (
         <AppChoice onSelectApp={selectApp} />
       )}
