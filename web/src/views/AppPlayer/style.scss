@@ -13,4 +13,16 @@
       color: #e50914;
     }
   }
+
+  &__timer {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 1.4rem;
+    color: #b81d24;
+
+    &:hover {
+      color: #e50914;
+    }
+  }
 }

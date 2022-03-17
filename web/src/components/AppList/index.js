@@ -14,7 +14,9 @@ export default function AppList({ onSelectApp }) {
   useEffect(async () => {
     const resp = await getAppList();
     if (resp.errorCode === undefined || resp.errorCode === 0) {
-      setApps(resp.data.apps);
+      if (resp.data?.apps !== null) {
+        setApps(resp.data.apps);
+      }
     }
   }, []);
 

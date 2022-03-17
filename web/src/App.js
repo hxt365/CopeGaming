@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import AppChoice from "./views/AppChoice";
 import AppPlayer from "./views/AppPlayer";
+import ProviderChoice from "./views/ProviderChoice";
+import Welcoming from "./views/Welcoming";
 
 import { decodeBase64, encodeBase64 } from "./utils";
 import { addRemoteSdp, addIceCandidate } from "./services/webrtc";
 import { getDevice } from "./services/api/apps";
 
 import "./App.scss";
-import Welcoming from "./views/Welcoming";
 
 function App() {
   const [welcoming, setWelcoming] = useState(true);
@@ -16,6 +17,7 @@ function App() {
   const [inpChannel, setInpChannel] = useState(null);
   const [videoStream, setVideoStream] = useState(null);
   const [selectedApp, setSelectedApp] = useState("");
+  const [selectedProvider, setSelectedProvider] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
@@ -28,6 +30,13 @@ function App() {
 
     ws.onopen = () => {
       setWs(ws);
+      const msg = {
+        type: "join",
+        data: JSON.stringify({
+          role: "player",
+        }),
+      };
+      ws.send(JSON.stringify(msg));
     };
 
     ws.onerror = () => {
@@ -40,8 +49,13 @@ function App() {
   useEffect(() => {
     if (pc === null) return;
 
+    console.log(
+      `Start playing ${selectedApp} using provider ${selectedProvider}`
+    );
+
     const msg = {
       type: "start",
+      receiverID: selectedProvider,
       data: JSON.stringify({
         appID: selectedApp,
         device: getDevice(),
@@ -57,6 +71,7 @@ function App() {
         ws.send(
           JSON.stringify({
             type: "sdp",
+            receiverID: selectedProvider,
             data: encodeBase64(JSON.stringify(answer)),
           })
         );
@@ -105,9 +120,7 @@ function App() {
     };
   }, [inpChannel]);
 
-  const startApp = async (appId) => {
-    console.log("Start playing", appId);
-
+  const startApp = async () => {
     const newPc = new RTCPeerConnection({
       iceServers: [
         {
@@ -163,6 +176,7 @@ function App() {
         ws.send(
           JSON.stringify({
             type: "ice-candidate",
+            receiverID: selectedProvider,
             data: encodeBase64(JSON.stringify(iceCandidate)),
           })
         );
@@ -178,7 +192,6 @@ function App() {
 
   const selectApp = (appId) => {
     setSelectedApp(appId);
-    startApp(appId);
   };
 
   const closeApp = () => {
@@ -192,15 +205,22 @@ function App() {
     setSelectedApp("");
   };
 
+  const selectProvider = (providerId) => {
+    setSelectedProvider(providerId);
+    startApp();
+  };
+
   return (
     <div className="App">
       {welcoming && <Welcoming />}
-      {selectedApp !== "" ? (
+      {selectedApp !== "" && selectedProvider !== "" ? (
         <AppPlayer
           videoStream={videoStream}
           inpChannel={inpChannel}
           onCloseApp={closeApp}
         />
+      ) : selectedApp !== "" ? (
+        <ProviderChoice onSelectProvider={selectProvider} />
       ) : (
         <AppChoice onSelectApp={selectApp} />
       )}
