@@ -15,4 +15,4 @@ services:
     env_file:
       - ./appconf/${APP_NAME}.env
     volumes:
-      - ../appvm/app/${APP_NAME}:/appvm/app
+      - ../appvm/apps/${APP_NAME}:/appvm/app
