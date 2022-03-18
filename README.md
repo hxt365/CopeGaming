@@ -1,4 +1,4 @@
-# CLOUD GAMING [WIP]
+# COPE GAMING (Cloud gaming platform)
 
 This project allows users to play computer games on browsers, without download or installation, just at the push of a button.
 This means that users can play AAA games on their low-spec computers or smartphones or even smart TVs anywhere and anytime.
@@ -6,6 +6,40 @@ The only requirement is fast and reliable internet.
 
 The difference between this project and [other cloud-gaming projects](https://github.com/hxt365/cloud-gaming) is that it allows users to offer their computers (providers) to other users (players) and make profits.
 That means games are run in computers of providers and streamed to browsers of players.
+
+## Demo
+
+![Demo](https://user-images.githubusercontent.com/16115992/159097057-be003206-8d2c-49f4-973b-7a27fccb8559.gif)
+
+## Usage
+
+### Prerequisite
+- Golang >= 1.16
+- NodeJs and npm (for Web UI)
+- Docker and docker-compose (for providers)
+- Current user on your computer has permissions to run Docker
+- For now, we only support Linux providers
+
+### How to run
+
+- To run Coordinator service:
+```bash
+cd coordinator/
+go run main.go
+```
+
+- To be a provider:
+```
+cd provider/
+./run.sh
+```
+
+- To run UI:
+```bash
+cd web/
+npm install
+npm start
+```
 
 ## Design
 
