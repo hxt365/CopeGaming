@@ -1,13 +1,13 @@
 package main
 
 import (
-	"coordinator/app/api/provider"
 	"flag"
 	"fmt"
 	"log"
 	"net/http"
 
 	"coordinator/app/api/app"
+	"coordinator/app/api/provider"
 	"coordinator/app/client"
 	"coordinator/app/ws"
 	"coordinator/settings"
