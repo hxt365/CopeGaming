@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AppChoice from "./views/AppChoice";
 import AppPlayer from "./views/AppPlayer";
 import ProviderChoice from "./views/ProviderChoice";
-// import Welcoming from "./views/Welcoming";
+import Welcoming from "./views/Welcoming";
 
 import { decodeBase64, encodeBase64 } from "./utils";
 import { addRemoteSdp, addIceCandidate } from "./services/webrtc";
@@ -11,7 +11,7 @@ import { getDevice } from "./services/api/apps";
 import "./App.scss";
 
 function App() {
-  // const [welcoming, setWelcoming] = useState(true);
+  const [welcoming, setWelcoming] = useState(true);
   const [ws, setWs] = useState(null);
   const [pc, setPc] = useState(null);
   const [inpChannel, setInpChannel] = useState(null);
@@ -19,11 +19,11 @@ function App() {
   const [selectedApp, setSelectedApp] = useState("");
   const [selectedProvider, setSelectedProvider] = useState("");
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setWelcoming(false);
-  //   }, 2500);
-  // });
+  useEffect(() => {
+    setTimeout(() => {
+      setWelcoming(false);
+    }, 2500);
+  });
 
   useEffect(() => {
     const ws = new WebSocket(process.env.REACT_APP_WS_ENDPOINT);
@@ -218,7 +218,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* {welcoming && <Welcoming />} */}
+      {welcoming && <Welcoming />}
       {selectedApp !== "" && selectedProvider !== "" ? (
         <AppPlayer
           videoStream={videoStream}
