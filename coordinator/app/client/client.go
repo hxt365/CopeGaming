@@ -1,6 +1,7 @@
 package client
 
 import (
+	"coordinator/constants"
 	"log"
 	"sync"
 	"time"
@@ -23,12 +24,24 @@ const (
 	maxMessageSize = 10240
 )
 
+type ProviderInfo struct {
+	HostName   string
+	Platform   string
+	CpuName    string
+	CpuNum     int
+	MemSize    float64
+	CpuPercent float64
+	MemPercent float64
+}
+
 type Client struct {
 	ID        string
-	role      Role
+	role      constants.Role
 	hub       *Hub
 	conn      *websocket.Conn
 	outputBuf chan interface{}
+	// Info of provider
+	Provider *ProviderInfo
 }
 
 func NewClient(id string, conn *websocket.Conn, hub *Hub) *Client {
@@ -87,28 +100,48 @@ func (c *Client) readPump() {
 }
 
 func (c *Client) handleMsg(msg *Message) {
-	if msg.Type == JoinMessage {
+	switch msg.Type {
+	case constants.JoinMessage:
 		joinData, err := parseJoinData(msg.Data)
 		if err != nil {
 			return
 		}
 
-		if joinData.Role == Provider {
-			c.role = Provider
+		if joinData.Role == constants.Provider {
+			c.role = constants.Provider
+			c.Provider = &ProviderInfo{
+				HostName:   joinData.HostName,
+				Platform:   joinData.Platform,
+				CpuName:    joinData.CpuName,
+				CpuNum:     joinData.CpuNum,
+				MemSize:    joinData.MemSize,
+				CpuPercent: joinData.CpuPercent,
+				MemPercent: joinData.MemPercent,
+			}
 		} else {
-			c.role = Player
+			c.role = constants.Player
+		}
+	case constants.StatsMessage:
+		if c.role != constants.Provider {
+			return
 		}
 
-		return
-	}
+		statsData, err := parseStatsData(msg.Data)
+		if err != nil {
+			return
+		}
 
-	receiver := c.hub.GetClient(msg.ReceiverID)
-	if receiver == nil {
-		return
-	}
+		c.Provider.CpuPercent = statsData.CpuPercent
+		c.Provider.MemPercent = statsData.MemPercent
+	default:
+		receiver := c.hub.GetClient(msg.ReceiverID)
+		if receiver == nil {
+			return
+		}
 
-	msg.SenderID = c.ID
-	c.sendMsg(receiver, msg)
+		msg.SenderID = c.ID
+		c.sendMsg(receiver, msg)
+	}
 }
 
 func (c *Client) writePump() {
@@ -184,7 +217,7 @@ func (h *Hub) GetProviders() []*Client {
 	var providers []*Client
 
 	for _, c := range h.clients {
-		if c.role == Provider {
+		if c.role == constants.Provider {
 			providers = append(providers, c)
 		}
 	}

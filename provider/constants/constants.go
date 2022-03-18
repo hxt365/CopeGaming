@@ -3,6 +3,7 @@ package constants
 type MessageType string
 
 const JoinMessage MessageType = "join"
+const StatsMessage MessageType = "stats"
 const StartMessage MessageType = "start"
 const SDPMessage MessageType = "sdp"
 const IceCandidateMessage MessageType = "ice-candidate"

@@ -8,7 +8,9 @@ axiosClient.interceptors.response.use(
   (response) => response.data,
   (error) => {
     console.log(error.response);
-    return Promise.reject(error);
+    return {
+      errorCode: -1,
+    };
   }
 );
 

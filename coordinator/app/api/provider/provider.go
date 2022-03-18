@@ -1,16 +1,23 @@
 package provider
 
 import (
-	"coordinator/app/api/response"
 	"encoding/json"
 	"log"
 	"net/http"
 
+	"coordinator/app/api/response"
 	"coordinator/app/client"
 )
 
 type Provider struct {
-	ID string `json:"id"`
+	ID         string  `json:"id"`
+	HostName   string  `json:"hostName"`
+	Platform   string  `json:"platform"`
+	CpuName    string  `json:"cpuName"`
+	CpuNum     int     `json:"cpuNum"`
+	MemSize    float64 `json:"memSize"`
+	CpuPercent float64 `json:"cpuPercent"`
+	MemPercent float64 `json:"memPercent"`
 }
 
 type GetProviderListResp struct {
@@ -21,7 +28,16 @@ func GetProviderList(hub *client.Hub, w http.ResponseWriter, r *http.Request) {
 	var providers []*Provider
 
 	for _, p := range hub.GetProviders() {
-		providers = append(providers, &Provider{ID: p.ID})
+		providers = append(providers, &Provider{
+			ID:         p.ID,
+			HostName:   p.Provider.HostName,
+			Platform:   p.Provider.Platform,
+			CpuName:    p.Provider.CpuName,
+			CpuNum:     p.Provider.CpuNum,
+			MemSize:    p.Provider.MemSize,
+			CpuPercent: p.Provider.CpuPercent,
+			MemPercent: p.Provider.MemPercent,
+		})
 	}
 
 	resp := response.Response{

@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"provider/app/session"
+	"provider/app/stats"
 	"provider/app/ws"
 	"provider/constants"
 	"provider/settings"
@@ -14,11 +15,36 @@ import (
 )
 
 type JoinData struct {
-	Role string `json:"role"`
+	Role       string  `json:"role"`
+	HostName   string  `json:"hostName"`
+	Platform   string  `json:"platform"`
+	CpuName    string  `json:"cpuName"`
+	CpuNum     int     `json:"cpuNum"`
+	MemSize    float64 `json:"memSize"`
+	CpuPercent float64 `json:"cpuPercent"`
+	MemPercent float64 `json:"memPercent"`
 }
 
 func joinAsProvider(conn *ws.Connection) error {
-	joinData, err := json.Marshal(JoinData{Role: "provider"})
+	sysInfo, err := stats.GetSysInfo()
+	if err != nil {
+		return err
+	}
+	sysStats, err := stats.GetSysStats(5 * time.Second)
+	if err != nil {
+		return err
+	}
+
+	joinData, err := json.Marshal(JoinData{
+		Role:       "provider",
+		HostName:   sysInfo.HostName,
+		Platform:   sysInfo.Platform,
+		CpuName:    sysInfo.CpuName,
+		CpuNum:     sysInfo.CpuNum,
+		MemSize:    sysInfo.MemSize,
+		CpuPercent: sysStats.CpuPercent,
+		MemPercent: sysStats.MemPercent,
+	})
 	if err != nil {
 		return err
 	}
@@ -35,7 +61,7 @@ func joinAsProvider(conn *ws.Connection) error {
 // maxTries = -1 means it will retry forever
 func tryConnect(addr string, maxTries int) *ws.Connection {
 	count := 0
-	ticker := time.NewTicker(1 * time.Second)
+	ticker := time.NewTicker(5 * time.Second)
 	defer ticker.Stop()
 
 	for range ticker.C {
@@ -66,6 +92,37 @@ func tryConnect(addr string, maxTries int) *ws.Connection {
 	return nil
 }
 
+type StatsData struct {
+	CpuPercent float64 `json:"cpuPercent"`
+	MemPercent float64 `json:"memPercent"`
+}
+
+func updateStats(conn *ws.Connection, interval time.Duration) {
+	for {
+		sysStats, err := stats.GetSysStats(interval)
+		if err != nil {
+			log.Println("Couldn't get system stats", err)
+			continue
+		}
+
+		statsData, err := json.Marshal(StatsData{
+			CpuPercent: sysStats.CpuPercent,
+			MemPercent: sysStats.MemPercent,
+		})
+		if err != nil {
+			log.Println("Couldn't marshal stats data", err)
+			continue
+		}
+
+		msg := ws.Message{
+			Type: constants.StatsMessage,
+			Data: string(statsData),
+		}
+
+		conn.Send(msg)
+	}
+}
+
 func main() {
 	hub := session.NewHub()
 
@@ -74,6 +131,8 @@ func main() {
 		log.Fatalln("Couldn't connect to coordinator service")
 	}
 	log.Println("Connected to Coordinator service as a Provider")
+
+	go updateStats(conn, 5*time.Second)
 
 	for {
 		msg, err := conn.ReadMsg()

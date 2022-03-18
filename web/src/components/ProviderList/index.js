@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getProviderList } from "../../services/api/providers";
+import ProviderListItem from "../ProviderListItem";
 
 import "./style.scss";
 
@@ -27,7 +28,7 @@ export default function ProviderList({ onSelectProvider }) {
                 onSelectProvider(p.id);
               }}
             >
-              {p.id}
+              <ProviderListItem provider={p} />
             </li>
           );
         })}

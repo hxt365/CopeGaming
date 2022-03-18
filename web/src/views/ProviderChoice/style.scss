@@ -1,9 +1,9 @@
 .provider-choice {
-  width: 40%;
+  width: 50%;
 
   &__title {
     text-align: center;
-    color: #b81d24;
+    color: #e50914;
     margin-bottom: 3rem;
   }
 
@@ -12,7 +12,9 @@
     right: 2rem;
     top: 2rem;
 
+    cursor: pointer;
     color: #b81d24;
+    font-family: inherit;
     font-size: 1.4rem;
     border: none;
     background-color: transparent;

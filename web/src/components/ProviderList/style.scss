@@ -1,7 +1,7 @@
 .provider-list {
   height: 70%;
   overflow-y: scroll;
-  font-size: 1.5rem;
+  overflow-x: hidden;
 
   &__list {
     list-style: none;
@@ -13,7 +13,7 @@
     cursor: pointer;
 
     &:hover {
-      font-size: 1.6rem;
+      transform: scale(1.02);
     }
 
     &:last-child {
