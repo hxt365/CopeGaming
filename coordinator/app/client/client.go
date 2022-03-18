@@ -1,10 +1,11 @@
 package client
 
 import (
-	"coordinator/constants"
 	"log"
 	"sync"
 	"time"
+
+	"coordinator/constants"
 
 	"github.com/gorilla/websocket"
 )
