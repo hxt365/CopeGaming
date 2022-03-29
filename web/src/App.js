@@ -3,6 +3,7 @@ import AppChoice from "./views/AppChoice";
 import AppPlayer from "./views/AppPlayer";
 import ProviderChoice from "./views/ProviderChoice";
 import Welcoming from "./views/Welcoming";
+import ProviderInstruction from "./views/ProviderInstruction";
 
 import { decodeBase64, encodeBase64 } from "./utils";
 import { addRemoteSdp, addIceCandidate } from "./services/webrtc";
@@ -12,6 +13,7 @@ import "./App.scss";
 
 function App() {
   const [welcoming, setWelcoming] = useState(true);
+  const [instructions, setInstructions] = useState(false);
   const [ws, setWs] = useState(null);
   const [pc, setPc] = useState(null);
   const [inpChannel, setInpChannel] = useState(null);
@@ -214,11 +216,17 @@ function App() {
   const reselectApp = () => {
     setSelectedApp("");
     setSelectedProvider("");
+    setInstructions(false);
+  };
+
+  const becomeProvider = () => {
+    setInstructions(true);
   };
 
   return (
     <div className="App">
       {welcoming && <Welcoming />}
+      {instructions && <ProviderInstruction onBack={reselectApp} />}
       {selectedApp !== "" && selectedProvider !== "" ? (
         <AppPlayer
           videoStream={videoStream}
@@ -231,7 +239,14 @@ function App() {
           onBack={reselectApp}
         />
       ) : (
-        <AppChoice onSelectApp={selectApp} />
+        <AppChoice onSelectApp={selectApp}>
+          <button
+            className="app-choice__become-provider"
+            onClick={becomeProvider}
+          >
+            Become a provider
+          </button>
+        </AppChoice>
       )}
     </div>
   );

@@ -6,4 +6,22 @@
     color: #e50914;
     margin-bottom: 3rem;
   }
+
+  &__become-provider {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #b81d24;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: #e50914;
+    }
+  }
 }

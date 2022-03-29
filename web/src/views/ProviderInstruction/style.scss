@@ -1,0 +1,39 @@
+.provider-instruction {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #221f1f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    color: #e50914;
+  }
+
+  & a {
+    color: #e50914;
+  }
+
+  &__close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+    cursor: pointer;
+    color: #b81d24;
+    font-family: inherit;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: #e50914;
+    }
+  }
+}
