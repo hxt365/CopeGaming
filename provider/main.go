@@ -158,6 +158,8 @@ func main() {
 		if msg.Type == constants.StartMessage {
 			s = session.NewSession(msg.SenderID, conn, hub)
 			hub.AddSession(s)
+		} else if msg.Type == constants.JoinAcceptedMessage {
+			log.Printf("Owner's ID: %s", msg.Data)
 		} else {
 			s = hub.GetSession(msg.SenderID)
 		}
