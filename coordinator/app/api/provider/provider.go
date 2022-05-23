@@ -25,12 +25,13 @@ type GetProviderListResp struct {
 }
 
 func GetProviderList(hub *client.Hub, w http.ResponseWriter, r *http.Request) {
+	hasOwnerIDParam := r.URL.Query().Has("owner")
 	ownerID := r.URL.Query().Get("owner")
 
-	var providers []*Provider
+	providers := make([]*Provider, 0)
 
 	for _, p := range hub.GetProviders() {
-		if ownerID == "" || p.Provider.OwnerID == ownerID {
+		if !hasOwnerIDParam || p.Provider.OwnerID == ownerID {
 			providers = append(providers, &Provider{
 				ID:         p.ID,
 				HostName:   p.Provider.HostName,

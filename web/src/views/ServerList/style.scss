@@ -1,15 +1,23 @@
-.provider-choice {
+.server-list {
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #221f1f;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  &__title {
-    text-align: center;
+  & h1 {
     color: #e50914;
-    margin-bottom: 3rem;
+  }
+
+  & a {
+    color: #e50914;
   }
 
   &__close {
@@ -32,5 +40,22 @@
   &__provider-list {
     max-height: 70%;
     width: 50%;
+  }
+
+  &__owner-id {
+    width: 5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e50914;
+    background-color: transparent;
+
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+
+    &::placeholder {
+      color: #b81d24;
+    }
   }
 }

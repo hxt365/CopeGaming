@@ -4,6 +4,7 @@ import AppPlayer from "./views/AppPlayer";
 import ProviderChoice from "./views/ProviderChoice";
 import Welcoming from "./views/Welcoming";
 import ProviderInstruction from "./views/ProviderInstruction";
+import ServerList from "./views/ServerList";
 
 import { decodeBase64, encodeBase64 } from "./utils";
 import { addRemoteSdp, addIceCandidate } from "./services/webrtc";
@@ -20,6 +21,7 @@ function App() {
   const [videoStream, setVideoStream] = useState(null);
   const [selectedApp, setSelectedApp] = useState("");
   const [selectedProvider, setSelectedProvider] = useState("");
+  const [showServers, setShowServers] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -217,16 +219,24 @@ function App() {
     setSelectedApp("");
     setSelectedProvider("");
     setInstructions(false);
+    setShowServers(false);
   };
 
-  const becomeProvider = () => {
+  const showProviderIntructions = () => {
     setInstructions(true);
+    setShowServers(false);
+  };
+
+  const showServerList = () => {
+    setInstructions(false);
+    setShowServers(true);
   };
 
   return (
     <div className="App">
       {welcoming && <Welcoming />}
       {instructions && <ProviderInstruction onBack={reselectApp} />}
+      {showServers && <ServerList onBack={reselectApp} />}
       {selectedApp !== "" && selectedProvider !== "" ? (
         <AppPlayer
           videoStream={videoStream}
@@ -240,12 +250,21 @@ function App() {
         />
       ) : (
         <AppChoice onSelectApp={selectApp}>
-          <button
-            className="app-choice__become-provider"
-            onClick={becomeProvider}
-          >
-            Become a provider
-          </button>
+          <div className="app-choice__for-provider">
+            <button
+              className="app-choice__provider-btn"
+              onClick={showServerList}
+            >
+              I&apos;m already a provider
+            </button>
+            or
+            <button
+              className="app-choice__provider-btn"
+              onClick={showProviderIntructions}
+            >
+              Become a provider
+            </button>
+          </div>
         </AppChoice>
       )}
     </div>

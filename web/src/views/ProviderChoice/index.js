@@ -9,8 +9,10 @@ export default function ProviderChoice({ onSelectProvider, onBack }) {
       <button className="provider-choice__close" onClick={onBack}>
         Back
       </button>
-      <h1 className="provider-choice__title">Choose a provider</h1>
-      <ProviderList onSelectProvider={onSelectProvider} />
+      <h1 className="provider-choice__title">Choose a game server</h1>
+      <div className="provider-choice__provider-list">
+        <ProviderList onSelectProvider={onSelectProvider} />
+      </div>
     </div>
   );
 }
