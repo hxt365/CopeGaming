@@ -25,19 +25,24 @@ type GetProviderListResp struct {
 }
 
 func GetProviderList(hub *client.Hub, w http.ResponseWriter, r *http.Request) {
-	var providers []*Provider
+	hasOwnerIDParam := r.URL.Query().Has("owner")
+	ownerID := r.URL.Query().Get("owner")
+
+	providers := make([]*Provider, 0)
 
 	for _, p := range hub.GetProviders() {
-		providers = append(providers, &Provider{
-			ID:         p.ID,
-			HostName:   p.Provider.HostName,
-			Platform:   p.Provider.Platform,
-			CpuName:    p.Provider.CpuName,
-			CpuNum:     p.Provider.CpuNum,
-			MemSize:    p.Provider.MemSize,
-			CpuPercent: p.Provider.CpuPercent,
-			MemPercent: p.Provider.MemPercent,
-		})
+		if !hasOwnerIDParam || p.Provider.OwnerID == ownerID {
+			providers = append(providers, &Provider{
+				ID:         p.ID,
+				HostName:   p.Provider.HostName,
+				Platform:   p.Provider.Platform,
+				CpuName:    p.Provider.CpuName,
+				CpuNum:     p.Provider.CpuNum,
+				MemSize:    p.Provider.MemSize,
+				CpuPercent: p.Provider.CpuPercent,
+				MemPercent: p.Provider.MemPercent,
+			})
+		}
 	}
 
 	resp := response.Response{

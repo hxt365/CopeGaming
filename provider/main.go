@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"log"
 	"time"
 
@@ -16,6 +17,7 @@ import (
 
 type JoinData struct {
 	Role       string  `json:"role"`
+	OwnerID    string  `json:"ownerID"`
 	HostName   string  `json:"hostName"`
 	Platform   string  `json:"platform"`
 	CpuName    string  `json:"cpuName"`
@@ -25,7 +27,7 @@ type JoinData struct {
 	MemPercent float64 `json:"memPercent"`
 }
 
-func joinAsProvider(conn *ws.Connection) error {
+func joinAsProvider(ownerID string, conn *ws.Connection) error {
 	sysInfo, err := stats.GetSysInfo()
 	if err != nil {
 		return err
@@ -37,6 +39,7 @@ func joinAsProvider(conn *ws.Connection) error {
 
 	joinData, err := json.Marshal(JoinData{
 		Role:       "provider",
+		OwnerID:    ownerID,
 		HostName:   sysInfo.HostName,
 		Platform:   sysInfo.Platform,
 		CpuName:    sysInfo.CpuName,
@@ -59,7 +62,7 @@ func joinAsProvider(conn *ws.Connection) error {
 
 // tryConnect tries to dial and setup a WS connection with Coordinator service
 // maxTries = -1 means it will retry forever
-func tryConnect(addr string, maxTries int) *ws.Connection {
+func tryConnect(ownerID, addr string, maxTries int) *ws.Connection {
 	count := 0
 	ticker := time.NewTicker(5 * time.Second)
 	defer ticker.Stop()
@@ -75,7 +78,7 @@ func tryConnect(addr string, maxTries int) *ws.Connection {
 			}
 			continue
 		}
-		if err = joinAsProvider(conn); err != nil {
+		if err = joinAsProvider(ownerID, conn); err != nil {
 			conn.Close()
 			count++
 			log.Println("Failed to join as a provider", count, err)
@@ -123,10 +126,14 @@ func updateStats(conn *ws.Connection, interval time.Duration) {
 	}
 }
 
+var ownerID = flag.String("owner", "", "ID of this computer's owner")
+
 func main() {
+	flag.Parse()
+
 	hub := session.NewHub()
 
-	conn := tryConnect(settings.CoordinatorAddr, 1)
+	conn := tryConnect(*ownerID, settings.CoordinatorAddr, 1)
 	if conn == nil {
 		log.Fatalln("Couldn't connect to coordinator service")
 	}
@@ -139,7 +146,7 @@ func main() {
 		if err != nil {
 			if _, ok := err.(*websocket.CloseError); ok {
 				log.Println("Reconnecting to Coordinator service..")
-				conn = tryConnect(settings.CoordinatorAddr, -1)
+				conn = tryConnect(*ownerID, settings.CoordinatorAddr, -1)
 				log.Println("Connected to Coordinator service")
 			} else {
 				log.Println("Error when reading WS message", err)
@@ -148,7 +155,10 @@ func main() {
 		}
 
 		var s *session.Session
-		if msg.Type == constants.StartMessage {
+		if msg.Type == constants.JoinAcceptedMessage {
+			log.Printf("Owner's ID: %s", msg.Data)
+			continue
+		} else if msg.Type == constants.StartMessage {
 			s = session.NewSession(msg.SenderID, conn, hub)
 			hub.AddSession(s)
 		} else {

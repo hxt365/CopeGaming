@@ -8,6 +8,7 @@ const (
 	Provider Role = "provider"
 	Player   Role = "player"
 
-	JoinMessage  MessageType = "join"
-	StatsMessage MessageType = "stats"
+	JoinMessage         MessageType = "join"
+	JoinAcceptedMessage MessageType = "accepted"
+	StatsMessage        MessageType = "stats"
 )

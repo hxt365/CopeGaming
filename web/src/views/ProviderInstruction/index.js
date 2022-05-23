@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.scss";
 
-export default function ProviderChoice({ onBack }) {
+export default function ProviderChoice({ onBack, children }) {
   return (
     <div className="provider-instruction">
       <button className="provider-instruction__close" onClick={onBack}>
@@ -31,9 +31,18 @@ export default function ProviderChoice({ onBack }) {
           Clone <a href="https://github.com/hxt365/CopeGaming">the project</a>{" "}
           from Github
         </li>
-        <li>Run provider/run.sh in the cloned folder</li>
-        <li>You&apos;re now a provider</li>
+        <li>
+          Run provider/run.sh in the cloned folder. If you already have some
+          other servers running, append your ID to the command. For example:
+          provider/run.sh 123
+        </li>
+        <li>
+          If the command runs successfully, it will print out your ID. Use it
+          for your other servers
+        </li>
+        <li>You&apos;re now a provider!</li>
       </ol>
+      {children}
     </div>
   );
 }

@@ -25,6 +25,7 @@ func parseMsg(raw []byte) (*Message, error) {
 
 type JoinData struct {
 	Role       constants.Role `json:"role"`
+	OwnerID    string         `json:"ownerID"`
 	HostName   string         `json:"hostName"`
 	Platform   string         `json:"platform"`
 	CpuName    string         `json:"cpuName"`

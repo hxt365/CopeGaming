@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"coordinator/constants"
+	"coordinator/utils"
 
 	"github.com/gorilla/websocket"
 )
@@ -26,6 +27,7 @@ const (
 )
 
 type ProviderInfo struct {
+	OwnerID    string
 	HostName   string
 	Platform   string
 	CpuName    string
@@ -100,40 +102,64 @@ func (c *Client) readPump() {
 	}
 }
 
+func (c *Client) handleJoinMsg(msg *Message) error {
+	joinData, err := parseJoinData(msg.Data)
+	if err != nil {
+		return err
+	}
+
+	if joinData.Role == constants.Provider {
+		ownerID := joinData.OwnerID
+		if ownerID == "" {
+			ownerID = utils.RandString(6)
+		}
+		c.role = constants.Provider
+		c.Provider = &ProviderInfo{
+			OwnerID:    ownerID,
+			HostName:   joinData.HostName,
+			Platform:   joinData.Platform,
+			CpuName:    joinData.CpuName,
+			CpuNum:     joinData.CpuNum,
+			MemSize:    joinData.MemSize,
+			CpuPercent: joinData.CpuPercent,
+			MemPercent: joinData.MemPercent,
+		}
+
+		c.sendMsg(c, Message{
+			Type: constants.JoinAcceptedMessage,
+			Data: ownerID,
+		})
+	} else {
+		c.role = constants.Player
+	}
+
+	return nil
+}
+
+func (c *Client) handleStatsMsg(msg *Message) error {
+	statsData, err := parseStatsData(msg.Data)
+	if err != nil {
+		return err
+	}
+
+	if c.role == constants.Provider {
+		c.Provider.CpuPercent = statsData.CpuPercent
+		c.Provider.MemPercent = statsData.MemPercent
+	}
+
+	return nil
+}
+
 func (c *Client) handleMsg(msg *Message) {
 	switch msg.Type {
 	case constants.JoinMessage:
-		joinData, err := parseJoinData(msg.Data)
-		if err != nil {
+		if err := c.handleJoinMsg(msg); err != nil {
 			return
-		}
-
-		if joinData.Role == constants.Provider {
-			c.role = constants.Provider
-			c.Provider = &ProviderInfo{
-				HostName:   joinData.HostName,
-				Platform:   joinData.Platform,
-				CpuName:    joinData.CpuName,
-				CpuNum:     joinData.CpuNum,
-				MemSize:    joinData.MemSize,
-				CpuPercent: joinData.CpuPercent,
-				MemPercent: joinData.MemPercent,
-			}
-		} else {
-			c.role = constants.Player
 		}
 	case constants.StatsMessage:
-		if c.role != constants.Provider {
+		if err := c.handleStatsMsg(msg); err != nil {
 			return
 		}
-
-		statsData, err := parseStatsData(msg.Data)
-		if err != nil {
-			return
-		}
-
-		c.Provider.CpuPercent = statsData.CpuPercent
-		c.Provider.MemPercent = statsData.MemPercent
 	default:
 		receiver := c.hub.GetClient(msg.ReceiverID)
 		if receiver == nil {

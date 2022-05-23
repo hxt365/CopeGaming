@@ -1,6 +1,7 @@
 .provider-list {
-  height: 70%;
-  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
   overflow-x: hidden;
 
   &__list {

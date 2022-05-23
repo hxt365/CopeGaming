@@ -4,17 +4,17 @@ import ProviderListItem from "../ProviderListItem";
 
 import "./style.scss";
 
-export default function ProviderList({ onSelectProvider }) {
+export default function ProviderList({ onSelectProvider, ownerID }) {
   const [providers, setProviders] = useState([]);
 
   useEffect(async () => {
-    const resp = await getProviderList();
+    const resp = await getProviderList(ownerID);
     if (resp.errorCode === undefined || resp.errorCode === 0) {
       if (resp.data?.providers !== null) {
         setProviders(resp.data.providers);
       }
     }
-  }, []);
+  }, [ownerID]);
 
   return (
     <div className="provider-list">
@@ -25,7 +25,7 @@ export default function ProviderList({ onSelectProvider }) {
               key={p.id}
               className="provider-list__list-item"
               onClick={() => {
-                onSelectProvider(p.id);
+                if (onSelectProvider !== undefined) onSelectProvider(p.id);
               }}
             >
               <ProviderListItem provider={p} />
